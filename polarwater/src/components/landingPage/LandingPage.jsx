@@ -1,5 +1,8 @@
 import React from "react";
 import Banner from "./Banner";
+import FilterSection from "./FilterSection";
+import ContamSection from "./ContamSection";
+import YelpSection from "./YelpSection";
 
 function LandingPage() {
     return (
@@ -8,9 +11,15 @@ function LandingPage() {
                 <div id="BANNER" className="col-span-12 ">
                     <Banner />
                 </div>
-                <div id="FILTERS" className="border col-start-2 col-end-12">Filter section. orkin</div>
-                <div id="CONTAMS" className="border col-start-2 col-end-12">contaminate section. orkin</div>
-                <div id="YELP" className="border col-start-2 col-end-12">Yelp section. pull their API</div>
+                <div id="FILTERS" className="border border-slate-950 col-start-2 col-end-12">
+                    <FilterSection />
+                </div>
+                <div id="CONTAMS" className="border border-slate-950 col-start-2 col-end-12">
+                    <ContamSection />
+                </div>
+                <div id="YELP" className="border border-slate-950 col-start-2 col-end-12">
+                    <YelpSection />
+                </div>
             </div>
         </React.Fragment>
     );
