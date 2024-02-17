@@ -10,7 +10,7 @@ function Footer() {
                         </span>
                     </h2>
                     <p className="text-lg text-gray-600 dark:text-gray-400">
-                        we've gotta find a footer we really like<br /> ...and Rihanna Money
+                        we've gotta find a footer we really like<br /> ...and Rihanna's Money
                     </p>
                 </div>
         </React.Fragment>
