@@ -14,6 +14,7 @@ root.render(
   </React.StrictMode>
 );
 
+// https://tailwindcss.com/docs/screens
 // https://www.hyperui.dev/
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
