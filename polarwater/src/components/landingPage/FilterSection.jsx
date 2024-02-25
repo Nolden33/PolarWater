@@ -5,32 +5,39 @@ function FilterSection() {
 	return (
 		<React.Fragment>
 			<div className="container mx-auto p-4 relative">
-				<div className="flex flex-col md:flex-row">
-					{/* Image Section */}
-					<div className="md:w-1/2">
-						<img
-							className="w-full h-auto object-cover"
-							src={ReRe}
-							alt="Image Description"
-							style={{ minWidth: "50%" }}
-						/>
-					</div>
-
-					{/* Content Section */}
-					<div className="md:w-1/2 flex flex-col justify-center p-4 md:pl-8">
-						<div className="mb-4">
-							<h2 className="text-3xl font-semibold text-gray-800 mb-2">
-								Your Title Section
-							</h2>
-							<p className="text-gray-600">
-								Description of your title section.
-							</p>
+                <div className="overflow-hidden relative w-full h-full">
+					<div className="flex flex-col md:flex-row">
+						{/* Image Section */}
+						<div className="md:w-1/2">
+							<img
+								className="w-full h-auto object-cover"
+								src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Rihanna_Fenty_2018.png"
+								alt="Image Description"
+								style={{ minWidth: "50%" }}
+							/>
 						</div>
 
+						{/* Content Section */}
+						<div className="md:w-1/2 flex flex-col items-center justify-start p-4 md:px-40 md:pt-48">
+							<div className="mb-4 space-y-4">
+								<h1 className="text-3xl font-bold text-gray-800 mb-2">
+									Over a century of experience standing under an umbrella.
+								</h1>
+								<p className="text-gray-600">
+									Our service combines the most advanced technology and methods
+									available today. This means your customized plan is designed
+									to get pests out of your home and keep them out year-round.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					{/* Cards Row */}
+					<div className="md:absolute bottom-8 right-0 md:left-1/3 z-20 w-full">
 						{/* Cards Row */}
-                        <div className="flex overflow-x-auto py-2 -mx-2 md:absolute bottom-0 right-0 md:left-1/3 z-10 md:z-0 w-full md:w-3/4">
+						<div className="flex overflow-x-auto py-2 -mx-2 md:w-3/4">
 							{/* Card 1 */}
-							<div className="flex-shrink-0 min-w-[260px] bg-white rounded-lg shadow">
+							<div className="flex-shrink-0 min-w-[300px] bg-white rounded-lg shadow mx-4">
 								<div className="p-4">
 									<h3 className="text-xl font-semibold text-gray-800 mb-2">
 										Card Title 1
@@ -45,7 +52,7 @@ function FilterSection() {
 							</div>
 
 							{/* Card 2 */}
-							<div className="min-w-[260px] bg-white rounded-lg shadow flex-shrink-0">
+							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-xl font-semibold text-gray-800 mb-2">
 										Card Title 2
@@ -60,7 +67,7 @@ function FilterSection() {
 							</div>
 
 							{/* Card 3 */}
-							<div className="min-w-[260px] bg-white rounded-lg shadow flex-shrink-0">
+							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-xl font-semibold text-gray-800 mb-2">
 										Card Title 3
@@ -75,7 +82,7 @@ function FilterSection() {
 							</div>
 
 							{/* Card 4 */}
-							<div className="min-w-[260px] bg-white rounded-lg shadow flex-shrink-0">
+							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-xl font-semibold text-gray-800 mb-2">
 										Card Title 4
@@ -90,7 +97,7 @@ function FilterSection() {
 							</div>
 
 							{/* Card 5 */}
-							<div className="min-w-[260px] bg-white rounded-lg shadow flex-shrink-0">
+							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-xl font-semibold text-gray-800 mb-2">
 										Card Title 5
@@ -103,6 +110,7 @@ function FilterSection() {
 									alt="Card 5"
 								/>
 							</div>
+							<div className="hidden md:flex flex-shrink-0 w-4 mx-10 md:w-8"></div>
 						</div>
 					</div>
 				</div>
