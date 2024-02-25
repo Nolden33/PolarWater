@@ -46,3 +46,36 @@
 	background-color: #1e1b4b;
 	z-index: -1;
 }
+
+@media (min-width: 768px) {
+	.leftSideImage {
+		width: 50%;
+	}
+}
+
+.parentContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	/* border: 3px solid #216ead; */
+}
+
+#CARDS {
+	bottom: -35px;
+	left: 0;
+	width: 100%;
+	height: auto;
+	/* border: 3px solid #73AD21; */
+	padding-left: 40%;
+}
+
+.picFilterSection {
+	position: absolute;
+	height: 100%;
+	width: auto;
+}
+
+.card {
+	width: 40em;
+	height: 100%;
+}

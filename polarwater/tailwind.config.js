@@ -5,6 +5,9 @@ module.exports = {
     './public/index.html', 
     'node_modules/preline/dist/*.js',
   ],
+  content: [
+    './node_modules/preline/preline.js',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},

@@ -4,6 +4,8 @@ import { PrimeReactProvider } from "primereact/api";
 import LandingPage from "./components/landingPage/LandingPage";
 import NavBar from "./Navbar";
 import Footer from "./Footer";
+import "preline/preline";
+
 
 function App() {
 	return (

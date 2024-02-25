@@ -11,7 +11,7 @@ function LandingPage() {
                 <div id="BANNER" className="col-span-12 ">
                     <Banner />
                 </div>
-                <div id="FILTERS" className="border border-slate-950 col-start-2 col-end-12">
+                <div id="FILTERS" className="border parentContainer border-slate-950 col-start-2 col-end-12 h-full">
                     <FilterSection />
                 </div>
                 <div id="CONTAMS" className="border border-slate-950 col-start-2 col-end-12">
