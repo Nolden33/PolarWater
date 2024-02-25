@@ -11,12 +11,10 @@ function ContamSection() {
 						<div className="md:w-1/2 flex flex-col items-center justify-start p-4 md:px-40 md:pt-8">
 							<div className="mb-4 space-y-4">
 								<h1 className="text-3xl font-bold text-gray-800 mb-2">
-									Over a century of experience standing under an umbrella.
+									RiRi is under an umbrella cuz of these bullshit photos.
 								</h1>
 								<p className="text-gray-600">
-									Our service combines the most advanced technology and methods
-									available today. This means your customized plan is designed
-									to get pests out of your home and keep them out year-round.
+									You would think she would be showered in money but no! Just shitty, contaminated water...
 								</p>
 							</div>
 						</div>

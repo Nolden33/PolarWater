@@ -5,7 +5,7 @@ function FilterSection() {
 	return (
 		<React.Fragment>
 			<div className="container mx-auto p-4 relative">
-                <div className="overflow-hidden relative w-full h-full">
+				<div className="overflow-hidden relative w-full h-full">
 					<div className="flex flex-col md:flex-row">
 						{/* Image Section */}
 						<div className="md:w-1/2">
@@ -24,9 +24,21 @@ function FilterSection() {
 									Over a century of experience standing under an umbrella.
 								</h1>
 								<p className="text-gray-600">
-									Our service combines the most advanced technology and methods
-									available today. This means your customized plan is designed
-									to get pests out of your home and keep them out year-round.
+									Bad girl RiRi now <br />
+									Swerve, swerve, swerve, swerve, leave it now
+									<br />
+									On your pulse like its EDM
+									<br />
+									Gas in the bitch like its premium
+									<br />
+									Haul ass on a bitch all in the fast lane
+									<br />
+									Been a bad bitch way before any cash came
+									<br />
+									I'm established, hundred carats on my name
+									<br />
+									Run the atlas, Im a natural, I'm alright
+									<br />
 								</p>
 							</div>
 						</div>
