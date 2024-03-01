@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Products
+Two systems (each with its own page - dropdown in Navbar)
+
+1. Whole House System => Non-Electric Systems (two filters)
+2. Drinking Water System => Reverse Osmosis \_ filters are sold as a package (5 or 6 filters)

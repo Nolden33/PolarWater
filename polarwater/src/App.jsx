@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { PrimeReactProvider } from "primereact/api";
 import LandingPage from "./components/landingPage/LandingPage";
+import ProductPage from "./components/products/ProductsPage";
 import NavBar from "./Navbar";
 import Footer from "./Footer";
 import "preline/preline";
@@ -23,14 +24,14 @@ function App() {
 							<Routes>
 								{/* <Route path="/logIn" element={<LogIn />} /> */}
 								<Route path="/" element={<LandingPage />} />
-								{/* <Route path="generate" element={<GenerateTeam />} />
-								<Route path="submitScores" element={<SubmitScores />} />
-								<Route path="playerScores" element={<PlayerScores />} /> */}
+								<Route path="/products" element={<ProductPage />} />
+								{/* <Route path="submitScores" element={<SubmitScores />} /> */}
+								{/* <Route path="playerScores" element={<PlayerScores />} /> */}
 							</Routes>
 						</div>
 					</Router>
 				</div>
-				<footer id="NAVBAR" className="App">
+				<footer id="BANNER" className="App">
 					<Footer />
 				</footer>
 			</div>

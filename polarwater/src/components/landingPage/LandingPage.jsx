@@ -29,7 +29,7 @@ function LandingPage() {
                 <div id="YELP" className="border border-slate-950 col-start-2 col-end-12">
                     <YelpSection />
                 </div>
-                <div id="CONTACT" className="border border-slate-950 col-start-2 col-end-12 hidden">
+                <div id="CONTACT" className="border border-slate-950 col-start-2 col-end-12 hidden ">
                     <ContactInfo />
                 </div>
             </div>

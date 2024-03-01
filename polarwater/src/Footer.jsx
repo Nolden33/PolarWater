@@ -1,20 +1,33 @@
 import React from "react";
+import ContactInfo from "./components/landingPage/ContactInfo";
 
 function Footer() {
-    return (
-        <React.Fragment>
-                <div id="FOOTER" className="border col-start-2 col-end-12">
-                    <h2 className="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
-                        <span className="bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent">
-                            Footer section.
-                        </span>
-                    </h2>
-                    <p className="text-lg text-gray-600 dark:text-gray-400">
-                        we've gotta find a footer we really like<br /> ...and Rihanna's Money
-                    </p>
-                </div>
-        </React.Fragment>
-    );
+	return (
+		<React.Fragment>
+			<div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+				{/* Column 1 */}
+				<div className="mb-4 md:mb-0">
+                    {/* <ContactInfo /> */}
+				</div>
+				{/* Column 2 */}
+				<div className="mb-4 md:mb-0">
+					<h5 className="font-bold text-lg mb-2">Column 2</h5>
+					<p className="text-gray-400 text-sm">
+						Quisque elementum nibh at dolor pellentesque, a eleifend libero
+						pharetra.
+					</p>
+				</div>
+				{/* Column 3 */}
+				<div className="mb-4 md:mb-0">
+					<h5 className="font-bold text-lg mb-2">Column 3</h5>
+					<p className="text-gray-400 text-sm">
+						Mauris neque felis, volutpat nec ullamcorper eget, sagittis vel
+						enim.
+					</p>
+				</div>
+			</div>
+		</React.Fragment>
+	);
 }
 
 export default Footer;
