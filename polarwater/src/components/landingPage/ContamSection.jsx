@@ -5,10 +5,10 @@ function ContamSection() {
         <React.Fragment>
 			<div className="container mx-auto p-4 relative">
                 <div className="overflow-hidden relative w-full h-full">
-					<div className="flex flex-col md:flex-row">
+					<div className="flex flex-col lg:flex-row">
 
 						{/* Content Section */}
-						<div className="md:w-1/2 flex flex-col items-center justify-start p-4 md:px-40 md:pt-8">
+						<div className="lg:w-3/4 max-w-3xl flex flex-col items-center justify-start p-4 md:px-24 md:pt-8">
 							<div className="mb-4 space-y-4">
 								<h1 className="text-3xl font-bold text-gray-800 mb-2">
 									RiRi is under an umbrella cuz of these bullshit photos.
@@ -108,7 +108,7 @@ function ContamSection() {
                                     />
                                 </div>
 							</div>
-							<div className="hidden md:flex flex-shrink-0 w-4 mx-10 md:w-8"></div>
+							<div className="hidden lg:flex flex-shrink-0 w-4 mx-10 lg:w-8"></div>
 						</div>
 					</div>
 				</div>

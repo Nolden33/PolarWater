@@ -74,3 +74,10 @@ Two systems (each with its own page - dropdown in Navbar)
 
 1. Whole House System => Non-Electric Systems (two filters)
 2. Drinking Water System => Reverse Osmosis \_ filters are sold as a package (5 or 6 filters)
+
+https://preline.co/docs/input-number.html
+https://tailwindcss.com/docs/container
+https://play.tailwindcss.com/
+https://stackblitz.com/edit/preline-v2-react-react-router?file=src%2Fcomponents%2FCarouselItem.tsx
+https://www.penguinwater.com/pages/reverse-osmosis
+https://www.puragainwater.com/6-stage-alkaline-system/

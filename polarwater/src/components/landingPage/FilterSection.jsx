@@ -6,9 +6,9 @@ function FilterSection() {
 		<React.Fragment>
 			<div className="container mx-auto p-4 relative">
 				<div className="overflow-hidden relative w-full h-full">
-					<div className="flex flex-col md:flex-row">
+					<div className="flex flex-col lg:flex-row">
 						{/* Image Section */}
-						<div className="md:w-1/2">
+						<div className="lg:w-1/2">
 							<img
 								className="w-full h-auto object-cover"
 								src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Rihanna_Fenty_2018.png"
@@ -18,7 +18,7 @@ function FilterSection() {
 						</div>
 
 						{/* Content Section */}
-						<div className="md:w-1/2 flex flex-col items-center justify-start p-4 md:px-40 md:pt-48">
+						<div className="lg:w-1/2 h-full lg:absolute lg:top-1/4 lg:left-3/4 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:flex lg:flex-col lg:items-center lg:justify-center md:px-24 md:pt-8">
 							<div className="mb-4 space-y-4">
 								<h1 className="text-3xl font-bold text-gray-800 mb-2">
 									Over a century of experience standing under an umbrella.
@@ -45,9 +45,9 @@ function FilterSection() {
 					</div>
 
 					{/* Cards Row */}
-					<div className="md:absolute bottom-8 right-0 md:left-1/3 z-20 w-full">
+					<div className="lg:absolute lg:mt-32 xl:mt-48 bottom-8 right-0 lg:left-1/3 z-20 w-full">
 						{/* Cards Row */}
-						<div className="flex overflow-x-auto py-2 -mx-2 md:w-3/4">
+						<div className="flex overflow-x-auto py-2 -mx-2 lg:w-3/4">
 							{/* Card 1 */}
 							<div className="flex-shrink-0 min-w-[300px] bg-white rounded-lg shadow mx-4">
 								<div className="p-4">
@@ -122,7 +122,7 @@ function FilterSection() {
 									alt="Card 5"
 								/>
 							</div>
-							<div className="hidden md:flex flex-shrink-0 w-4 mx-10 md:w-8"></div>
+							<div className="hidden lg:flex flex-shrink-0 w-4 mx-10 lg:w-8"></div>
 						</div>
 					</div>
 				</div>
