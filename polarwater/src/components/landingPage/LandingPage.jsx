@@ -26,7 +26,7 @@ function LandingPage() {
                 <div id="CONTAMS" className="col-start-2 col-end-12">
                     <ContamSection />
                 </div>
-                <div id="YELP" className="border border-slate-950 col-start-2 col-end-12">
+                <div id="YELP" className="border border-slate-950 col-start-2 col-end-12 hidden">
                     <YelpSection />
                 </div>
                 <div id="CONTACT" className="border border-slate-950 col-start-2 col-end-12 hidden ">

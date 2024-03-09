@@ -16,7 +16,7 @@ function App() {
 			<Router>
 				<header
 					id="NAVBAR"
-					className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-3 dark:bg-gray-800"
+					className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm dark:bg-gray-800"
 				>
 					<NavBar />
 				</header>

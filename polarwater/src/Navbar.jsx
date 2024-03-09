@@ -1,18 +1,19 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useLocation, Link } from "react-router-dom"; // Import Link
+import { useLocation, Link } from "react-router-dom";
 
 function Navbar() {
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 	const [isCollapsed, setIsCollapsed] = useState(true);
 	const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+	const closeDropdown = () => setIsDropdownOpen(false);
 	const toggleNavbar = () => setIsCollapsed(!isCollapsed);
 	const dropdownRef = useRef(null);
-	const location = useLocation(); // Use useLocation hook to get the current path
+	const location = useLocation();
 
 	useEffect(() => {
 		function handleClickOutside(event) {
 			if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-				setIsDropdownOpen(false);
+				closeDropdown();
 			}
 		}
 
@@ -23,16 +24,18 @@ function Navbar() {
 	}, [dropdownRef]);
 
 	const isActive = (path) => {
-        return location.pathname === path || location.pathname.includes(path);
-    };
+		return location.pathname === path || location.pathname.includes(path);
+	};
 
-    const linkClass = (path) => {
-        return isActive(path) ? "text-red-400 hover:text-white" : "text-gray-400 hover:text-white";
-    };
+	const linkClass = (path) => {
+		return isActive(path)
+			? "text-red-400 hover:text-white"
+			: "text-gray-300 hover:text-white";
+	};
 
-    return (
+	return (
 		<React.Fragment>
-			<div className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-2 dark:bg-gray-800">
+			<div className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-3" style={{ backgroundColor: "#4061AD" }}>
 				<nav
 					className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
 					aria-label="Global"
@@ -99,26 +102,71 @@ function Navbar() {
 					>
 						<div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
 							{/* Home */}
-                            <Link to="/home" className={`${linkClass('/home')} font-medium`} aria-current={isActive('/home') ? "page" : undefined}>Home</Link>
+							<Link
+								to="/home"
+								className={`${linkClass("/home")} font-medium`}
+								aria-current={isActive("/home") ? "page" : undefined}
+							>
+								Home
+							</Link>
 							{/* Dropdown */}
 							<div
 								className="hs-dropdown-hover-event [--trigger:hover] [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] flex justify-center w-md-full"
 								ref={dropdownRef}
 								style={{ position: "relative" }}
 							>
-								<button onClick={toggleDropdown} className={`${linkClass('/products')} flex items-center font-medium`}>Products</button>
+								<button
+									onClick={toggleDropdown}
+									className={`${linkClass(
+										"/products"
+									)} flex items-center font-medium`}
+								>
+									Products
+								</button>
 								<div
-									className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-48 bg-white shadow-md rounded-lg p-2 transition-opacity duration-300 ${
+									className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-48 shadow-md rounded-lg p-2 transition-opacity duration-300 ${
 										isDropdownOpen ? "opacity-100" : "opacity-0"
 									} ${isDropdownOpen ? "visible" : "invisible"}`}
-									style={{ zIndex: 1000 }}
+									style={{ zIndex: 1000, backgroundColor: "#4061AD" }}
 								>
-									<Link to="/products/wholeHouseSystems" className={`${linkClass('/products/wholeHouseSystems')} block py-2 px-3 rounded-lg text-sm hover:bg-gray-100`} aria-current={isActive('/products/wholeHouseSystems') ? "page" : undefined}>Whole House System</Link>
-                                <Link to="/products/drinkingWaterSystems" className={`${linkClass('/products/drinkingWaterSystems')} block py-2 px-3 rounded-lg text-sm hover:bg-gray-100`} aria-current={isActive('/products/drinkingWaterSystems') ? "page" : undefined}>Drinking Water System</Link>
+									<Link
+										to="/products/wholeHouseSystems"
+										className={`${linkClass(
+											"/products/wholeHouseSystems"
+										)} block py-2 px-3 rounded-lg text-sm hover:bg-red-400`}
+										aria-current={
+											isActive("/products/wholeHouseSystems")
+												? "page"
+												: undefined
+										}
+										onClick={closeDropdown}
+									>
+										Whole House System
+									</Link>
+									<Link
+										to="/products/drinkingWaterSystems"
+										className={`${linkClass(
+											"/products/drinkingWaterSystems"
+										)} block py-2 px-3 rounded-lg text-sm hover:bg-red-400`}
+										aria-current={
+											isActive("/products/drinkingWaterSystems")
+												? "page"
+												: undefined
+										}
+										onClick={closeDropdown}
+									>
+										Drinking Water System
+									</Link>
 								</div>
 							</div>
 							{/* Contaminates */}
-							<Link to="/contaminates" className={`${linkClass('/contaminates')} font-medium`} aria-current={isActive('/contaminates') ? "page" : undefined}>Contaminates</Link>
+							<Link
+								to="/contaminates"
+								className={`${linkClass("/contaminates")} font-medium`}
+								aria-current={isActive("/contaminates") ? "page" : undefined}
+							>
+								Contaminates
+							</Link>
 						</div>
 					</div>
 				</nav>
