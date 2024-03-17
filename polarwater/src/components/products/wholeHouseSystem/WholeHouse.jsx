@@ -1,25 +1,48 @@
-import React from "react";
-// import ProductBanner from "./ProductBanner";
-import ProductCard from "./ProductCards";
+import React, { useState, useEffect } from "react";
+import Water from "../../../images/products/WaterSpread.png";
+import ProductPhone from "./ProductPhone";
+import ProductLarge from "./ProductLarge";
 
 function WholeHouse() {
-    return (
-        <React.Fragment>
-            <div className="grid grid-flow-row auto-rows-max">
-                <div id="BANNER" className="">
-                    {/* <ProductBanner /> */}
-                </div>
-                <div className="">
-                    <p class="text-2xl">
-                        Whole House Systems
-                    </p>
-                    <p class="text-lg">
-                        this will have a picture here. the whole house systems as a title above picture or below banner?
-                    </p>
-                </div>
-                <div id="WHOLEHOUSECARDS" className="">
-                    <ProductCard />
-                </div>
+    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setIsLargeScreen(window.innerWidth >= 768);
+		};
+
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
+	return (
+		<React.Fragment>
+			<div className="grid grid-flow-row auto-rows-max">
+				<a className="group relative block overflow-hidden dark:focus:outline-none">
+					<div className="aspect-w-12 aspect-h-7 sm:aspect-none overflow-hidden">
+						<img
+							className="w-full h-80 object-cover"
+							src={Water}
+							alt="Image Description"
+						/>
+					</div>
+					<div className="absolute bottom-48 lg:start-40 md:start-20 p-2">
+						<div className="p-3 text-3xl font-bold text-black">
+                            Whole House Systems
+						</div>
+					</div>
+				</a>
+                
+                {isLargeScreen ? (
+					// Product Large Section for larger screens
+					<ProductLarge />
+				) : (
+					// ProductPhone Component for smaller screens
+					<ProductPhone />
+				)}
             </div>
         </React.Fragment>
     );

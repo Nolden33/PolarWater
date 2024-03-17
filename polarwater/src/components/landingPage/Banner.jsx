@@ -35,8 +35,8 @@ function Banner() {
     return (
         <React.Fragment>
             <div className="relative">
-                <div className="overflow-hidden w-full min-h-[350px] rounded-lg">
-                    <div className="flex transition-transform duration-700" style={slideStyles}>
+                <div className="overflow-hidden w-full min-h-[350px] bg-white">
+                    <div className="flex transition-transform duration-700  " style={slideStyles}>
                         <div className="min-w-full">
                             <CarOne />
                         </div>

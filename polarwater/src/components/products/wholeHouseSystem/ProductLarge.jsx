@@ -1,7 +1,7 @@
 import React from "react";
 import rere from "../../../images/landingPage/filterSection/ReRe.jpg";
 
-function ProductCards() {
+function ProductLarge() {
 	return (
 		<React.Fragment>
 			<div className="container mx-auto p-4">
@@ -61,4 +61,4 @@ function ProductCards() {
 	);
 }
 
-export default ProductCards;
+export default ProductLarge;

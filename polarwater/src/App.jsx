@@ -22,7 +22,7 @@ function App() {
 				</header>
 				<div className="app-bg mx-auto">
 					
-						<div className="col overflow-x-scroll">
+						<div className="col">
 							<Routes>
 								{/* <Route path="/logIn" element={<LogIn />} /> */}
 								<Route path="/home" element={<LandingPage />} />
