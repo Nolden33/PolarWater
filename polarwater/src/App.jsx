@@ -33,7 +33,7 @@ function App() {
 							</Routes>
 						</div>
 				</div>
-				<footer id="BANNER" className="App">
+				<footer className="App blueOne">
 					<Footer />
 				</footer>
 			</Router>

@@ -9,10 +9,10 @@ function LandingPage() {
     return (
         <React.Fragment>
             <div className="grid grid-cols-12">
-                <div id="BANNER" className="col-span-12 ">
+                <div className="col-span-12 ">
                     <Banner />
                 </div>
-                <div id="BANNER" className="col-span-12 w-full h-25">
+                <div className="col-span-12 w-full h-25 blueOne hidden">
                     <div>
                     <br /><br />
                     </div>
@@ -20,10 +20,10 @@ function LandingPage() {
                     <br /><br />
                     </div>
                 </div>
-                <div id="FILTERS" className="col-start-2 col-end-12 h-full">
+                <div id="FILTERS" className="col-span-12 lg:px-20 xl:px-40 lg:py-20 iceWater h-full">
                     <FilterSection />
                 </div>
-                <div id="CONTAMS" className="col-start-2 col-end-12">
+                <div id="CONTAMS" className="col-span-12 lg:px-20 xl:px-40 lg:py-20 blueSix h-full">
                     <ContamSection />
                 </div>
                 <div id="YELP" className="border border-slate-950 col-start-2 col-end-12 hidden">

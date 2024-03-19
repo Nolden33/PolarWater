@@ -29,13 +29,13 @@ function Navbar() {
 
 	const linkClass = (path) => {
 		return isActive(path)
-			? "text-red-400 hover:text-white"
+			? "text-cyan-200 hover:text-white"
 			: "text-gray-300 hover:text-white";
 	};
 
 	return (
 		<React.Fragment>
-			<div className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-3" style={{ backgroundColor: "#4061AD" }}>
+			<div className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-3 blueOne">
 				<nav
 					className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
 					aria-label="Global"
@@ -124,16 +124,16 @@ function Navbar() {
 									Products
 								</button>
 								<div
-									className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-48 shadow-md rounded-lg p-2 transition-opacity duration-300 ${
+									className={`absolute blueOne top-full left-1/2 transform -translate-x-1/2 mt-1 w-48 shadow-md rounded-lg p-2 transition-opacity duration-300 ${
 										isDropdownOpen ? "opacity-100" : "opacity-0"
 									} ${isDropdownOpen ? "visible" : "invisible"}`}
-									style={{ zIndex: 1000, backgroundColor: "#4061AD" }}
+									style={{ zIndex: 1000 }}
 								>
 									<Link
 										to="/products/wholeHouseSystems"
 										className={`${linkClass(
 											"/products/wholeHouseSystems"
-										)} block py-2 px-3 rounded-lg text-sm hover:bg-red-400`}
+										)} block py-2 px-3 rounded-lg text-sm hover:text-white`}
 										aria-current={
 											isActive("/products/wholeHouseSystems")
 												? "page"
@@ -147,7 +147,7 @@ function Navbar() {
 										to="/products/drinkingWaterSystems"
 										className={`${linkClass(
 											"/products/drinkingWaterSystems"
-										)} block py-2 px-3 rounded-lg text-sm hover:bg-red-400`}
+										)} block py-2 px-3 rounded-lg text-sm hover:text-white`}
 										aria-current={
 											isActive("/products/drinkingWaterSystems")
 												? "page"

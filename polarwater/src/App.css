@@ -58,3 +58,38 @@
 	height: auto;
 	min-width: 250px;
 }
+
+.blueOne {
+	background-color: #09669d;
+}
+
+.blueTwo {
+	background-color: #2880b5;
+}
+
+.blueThree {
+	background-color: #4697c7;
+}
+
+.blueFour {
+	background-color: #6ab0d9;
+}
+
+.blueFive {
+	background-color: #9bcdeb;
+}
+
+.blueSix {
+	background-color: #e1f9ff;
+}
+
+.redTextOne {
+	color: #c20c09;
+}
+
+.iceWater {
+	background-image: url("../src/images/landingPage/IceWater.png");
+	background-size: cover; /* Make the image as large as possible contained within the element */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-position: center; /* Center the background image */
+}

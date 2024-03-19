@@ -1,5 +1,6 @@
 import React from "react";
 import ReRe from "../../images/landingPage/filterSection/ReRe.jpg";
+import ReBg from "../../images/landingPage/filterSection/RihannaNoBg.png";
 
 function FilterSection() {
 	return (
@@ -11,7 +12,7 @@ function FilterSection() {
 						<div className="lg:w-1/2">
 							<img
 								className="w-full h-auto object-cover"
-								src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Rihanna_Fenty_2018.png"
+								src={ReBg}
 								alt="Image Description"
 								style={{ minWidth: "50%" }}
 							/>
@@ -51,76 +52,91 @@ function FilterSection() {
 							{/* Card 1 */}
 							<div className="flex-shrink-0 min-w-[300px] bg-white rounded-lg shadow mx-4">
 								<div className="p-4">
-									<h3 className="text-xl font-semibold text-gray-800 mb-2">
-										Card Title 1
+									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
+										Product 1
 									</h3>
-									<p className="text-gray-600">Description of card 1.</p>
+									{/* <p className="text-gray-600">Description of card 1.</p> */}
 								</div>
 								<img
-									className="h-40 w-full object-cover mt-2 rounded-b-lg"
+									className="h-40 w-full object-cover mt-2"
 									src="https://source.unsplash.com/random/260x160?sig=6"
 									alt="Card 1"
 								/>
+								<div className="p-4">									
+									<p className="text-gray-600">View more...</p>
+								</div>
 							</div>
 
 							{/* Card 2 */}
 							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
-									<h3 className="text-xl font-semibold text-gray-800 mb-2">
-										Card Title 2
+									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
+									Product 2
 									</h3>
-									<p className="text-gray-600">Description of card 2.</p>
+									{/* <p className="text-gray-600">Description of card 2.</p> */}
 								</div>
 								<img
-									className="h-40 w-full object-cover mt-2 rounded-b-lg"
+									className="h-40 w-full object-cover mt-2"
 									src="https://source.unsplash.com/random/260x160?sig=7"
 									alt="Card 2"
 								/>
+								<div className="p-4">									
+									<p className="text-gray-600">View more...</p>
+								</div>
 							</div>
 
 							{/* Card 3 */}
 							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
-									<h3 className="text-xl font-semibold text-gray-800 mb-2">
-										Card Title 3
+									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
+									Product 3
 									</h3>
-									<p className="text-gray-600">Description of card 3.</p>
+									{/* <p className="text-gray-600">Description of card 3.</p> */}
 								</div>
 								<img
-									className="h-40 w-full object-cover mt-2 rounded-b-lg"
+									className="h-40 w-full object-cover mt-2"
 									src="https://source.unsplash.com/random/260x160?sig=8"
 									alt="Card 3"
 								/>
+								<div className="p-4">									
+									<p className="text-gray-600">View more...</p>
+								</div>
 							</div>
 
 							{/* Card 4 */}
 							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
-									<h3 className="text-xl font-semibold text-gray-800 mb-2">
-										Card Title 4
+									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
+									Product 4
 									</h3>
-									<p className="text-gray-600">Description of card 4.</p>
+									{/* <p className="text-gray-600">Description of card 4.</p> */}
 								</div>
 								<img
-									className="h-40 w-full object-cover mt-2 rounded-b-lg"
+									className="h-40 w-full object-cover mt-2"
 									src="https://source.unsplash.com/random/260x160?sig=9"
 									alt="Card 4"
 								/>
+								<div className="p-4">									
+									<p className="text-gray-600">View more...</p>
+								</div>
 							</div>
 
 							{/* Card 5 */}
 							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
-									<h3 className="text-xl font-semibold text-gray-800 mb-2">
-										Card Title 5
+									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
+									Product 5
 									</h3>
-									<p className="text-gray-600">Description of card 5.</p>
+									{/* <p className="text-gray-600">Description of card 5.</p> */}
 								</div>
 								<img
-									className="h-40 w-full object-cover mt-2 rounded-b-lg"
+									className="h-40 w-full object-cover mt-2"
 									src="https://source.unsplash.com/random/260x160?sig=10"
 									alt="Card 5"
 								/>
+								<div className="p-4">									
+									<p className="text-gray-600">View more...</p>
+								</div>
 							</div>
 							<div className="hidden lg:flex flex-shrink-0 w-4 mx-10 lg:w-8"></div>
 						</div>

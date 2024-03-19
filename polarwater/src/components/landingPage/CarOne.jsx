@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Family from "../../images/landingPage/banner/FamilyBanner.jpg";
-import FamilySmall from "../../images/landingPage/banner/FamilyBannerSmall.jpg";
+import Family from "../../images/landingPage/banner/FamilyBanner.webp";
+import FamilySmall from "../../images/landingPage/banner/FamilyBannerSmall.webp";
 
 function CarOne() {
     const [currentImage, setCurrentImage] = useState(Family);
@@ -43,16 +43,16 @@ function CarOne() {
                                 className="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-sm text-gray-800 py-1 px-3 rounded-full transition hover:border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-200"
                                 href="#"
                             >
-                                It's just something for the sizing
+                                Contact me section
                             </a>
                         </div>
                         <br />
 
                         {/* Title */}
                         <h1 className="text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200 font-bold">
-                            Pay me what you <br />
+                            Contact <br />
                             <span className="bg-clip-text text-transparent bg-gradient-to-tl from-blue-600 to-violet-600">
-                                OWE ME
+                                Us
                             </span>
                         </h1>
 
