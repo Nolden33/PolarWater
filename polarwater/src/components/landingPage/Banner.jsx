@@ -9,7 +9,7 @@ function Banner() {
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveSlide((prevSlide) => (prevSlide + 1) % totalSlides);
-        }, 5000); // Auto-advance slides every 5 seconds
+        }, 10000); // Auto-advance slides every 5 seconds
         return () => clearInterval(interval);
     }, [totalSlides]);
 
@@ -35,7 +35,7 @@ function Banner() {
     return (
         <React.Fragment>
             <div className="relative">
-                <div className="overflow-hidden w-full min-h-[350px] bg-white">
+                <div className="overflow-hidden w-full min-h-[350px] bg-white shadow-lg">
                     <div className="flex transition-transform duration-700  " style={slideStyles}>
                         <div className="min-w-full">
                             <CarOne />
