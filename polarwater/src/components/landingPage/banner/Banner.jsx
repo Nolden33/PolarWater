@@ -9,7 +9,7 @@ function Banner() {
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveSlide((prevSlide) => (prevSlide + 1) % totalSlides);
-        }, 10000); // Auto-advance slides every 5 seconds
+        }, 10000); // Auto-advance slides every 10 seconds
         return () => clearInterval(interval);
     }, [totalSlides]);
 

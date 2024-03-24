@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Faucet from "../../images/landingPage/banner/SinkBanner.webp";
-import FamilySmall from "../../images/landingPage/banner/GlassWater.webp";
+import Faucet from "../../../images/landingPage/banner/SinkBanner.webp";
+import FamilySmall from "../../../images/landingPage/banner/GlassWater.webp";
 
 function CarTwo() {
     const [currentImage, setCurrentImage] = useState(Faucet);
@@ -33,7 +33,7 @@ function CarTwo() {
                     alt="Family using fresh and clean water."
                 />
                 {/* Text Overlay */}
-                <div className="absolute inset-0 p-2 flex flex-col justify-center items-center bg-black bg-opacity-50">
+                <div className="absolute inset-0 p-2 flex flex-col justify-center items-center">
                     <div className="text-center mx-auto p-4">
                         {/* Announcement Banner */}
                         <div className="flex justify-center">
