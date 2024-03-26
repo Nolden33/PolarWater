@@ -5,8 +5,8 @@ import ReBg from "../../images/landingPage/filterSection/RihannaNoBg.png";
 function FilterSection() {
 	return (
 		<React.Fragment>
-			<div className="container mx-auto p-4 relative">
-				<div className="overflow-hidden relative w-full h-full">
+			<div className="container mx-auto p-4">
+				<div className="overflow-visible w-full h-full">
 					<div className="flex flex-col lg:flex-row">
 						{/* Image Section */}
 						<div className="lg:w-1/2">
@@ -19,36 +19,23 @@ function FilterSection() {
 						</div>
 
 						{/* Content Section */}
-						<div className="lg:w-1/2 h-full lg:absolute lg:top-1/4 lg:left-3/4 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:flex lg:flex-col lg:items-center lg:justify-center md:px-24 md:pt-8">
-							<div className="mb-4 space-y-4">
+						<div className="lg:w-1/2 mt-8 h-full lg:absolute lg:top-1/4 xl:top-60 2xl:top-96 lg:left-3/4 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:flex lg:flex-col lg:items-center lg:justify-center lg:px-8 lg:pt-8">
+							<div className="mb-4 xl:px-20  space-y-4">
 								<h1 className="text-3xl font-bold text-gray-800 mb-2">
-									Over a century of experience standing under an umbrella.
+									Transform the way you experience water!
 								</h1>
 								<p className="text-gray-600">
-									Bad girl RiRi now <br />
-									Swerve, swerve, swerve, swerve, leave it now
-									<br />
-									On your pulse like its EDM
-									<br />
-									Gas in the bitch like its premium
-									<br />
-									Haul ass on a bitch all in the fast lane
-									<br />
-									Been a bad bitch way before any cash came
-									<br />
-									I'm established, hundred carats on my name
-									<br />
-									Run the atlas, Im a natural, I'm alright
-									<br />
+								Polar Water LLC offers premier water filtration solutions tailored to your unique needs, ensuring your home enjoys clean, safe, and refreshing water. Our range of cutting-edge, carbon-based, whole-house systems are designed for superior performance without salt, catering to various water quality issues. We provide personalized systems, professional installation, and dedicated ongoing maintenance for optimal functionality. Committed to customer satisfaction, our team ensures a seamless process from consultation to post-installation support. Choose Polar Water LLC for quality, reliability, and a healthier water experience.
 								</p>
+								
 							</div>
 						</div>
 					</div>
 
 					{/* Cards Row */}
-					<div className="lg:absolute lg:mt-32 xl:mt-48 bottom-8 right-0 lg:left-1/3 z-20 w-full">
-						{/* Cards Row */}
-						<div className="flex overflow-x-auto py-2 -mx-2 lg:w-3/4">
+                    <div className="hideScroll 2xl:top-1/3 xl:top-1/3 lg:top-1/3 lg:absolute lg:mt-40 xl:mt-52 2xl:mt-80 bottom-0 right-0 lg:left-1/3 z-20 w-full lg:overflow-hidden">
+                        {/* Cards Row */}
+                        <div className="flex overflow-x-auto py-2 -mx-2 lg:w-3/4">
 							{/* Card 1 */}
 							<div className="flex-shrink-0 min-w-[300px] bg-white rounded-lg shadow mx-4">
 								<div className="p-4">
@@ -62,7 +49,7 @@ function FilterSection() {
 									src="https://source.unsplash.com/random/260x160?sig=6"
 									alt="Card 1"
 								/>
-								<div className="p-4">									
+								<div className="p-4">
 									<p className="text-gray-600">View more...</p>
 								</div>
 							</div>
@@ -71,7 +58,7 @@ function FilterSection() {
 							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
-									Product 2
+										Product 2
 									</h3>
 									{/* <p className="text-gray-600">Description of card 2.</p> */}
 								</div>
@@ -80,7 +67,7 @@ function FilterSection() {
 									src="https://source.unsplash.com/random/260x160?sig=7"
 									alt="Card 2"
 								/>
-								<div className="p-4">									
+								<div className="p-4">
 									<p className="text-gray-600">View more...</p>
 								</div>
 							</div>
@@ -89,7 +76,7 @@ function FilterSection() {
 							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
-									Product 3
+										Product 3
 									</h3>
 									{/* <p className="text-gray-600">Description of card 3.</p> */}
 								</div>
@@ -98,7 +85,7 @@ function FilterSection() {
 									src="https://source.unsplash.com/random/260x160?sig=8"
 									alt="Card 3"
 								/>
-								<div className="p-4">									
+								<div className="p-4">
 									<p className="text-gray-600">View more...</p>
 								</div>
 							</div>
@@ -107,7 +94,7 @@ function FilterSection() {
 							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
-									Product 4
+										Product 4
 									</h3>
 									{/* <p className="text-gray-600">Description of card 4.</p> */}
 								</div>
@@ -116,7 +103,7 @@ function FilterSection() {
 									src="https://source.unsplash.com/random/260x160?sig=9"
 									alt="Card 4"
 								/>
-								<div className="p-4">									
+								<div className="p-4">
 									<p className="text-gray-600">View more...</p>
 								</div>
 							</div>
@@ -125,7 +112,7 @@ function FilterSection() {
 							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
-									Product 5
+										Product 5
 									</h3>
 									{/* <p className="text-gray-600">Description of card 5.</p> */}
 								</div>
@@ -134,7 +121,7 @@ function FilterSection() {
 									src="https://source.unsplash.com/random/260x160?sig=10"
 									alt="Card 5"
 								/>
-								<div className="p-4">									
+								<div className="p-4">
 									<p className="text-gray-600">View more...</p>
 								</div>
 							</div>

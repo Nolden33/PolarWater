@@ -88,3 +88,12 @@
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-position: center; /* Center the background image */
 }
+
+.hideScroll ::-webkit-scrollbar {
+	display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.hideScroll {
+	-ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar for Firefox */
+}

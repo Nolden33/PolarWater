@@ -21,7 +21,7 @@ function ContamSection() {
 					</div>
 
 					{/* Cards Row */}
-					<div className="w-full">
+					<div className="w-full hideScroll">
 						{/* Cards Row */}
 						<div className="flex overflow-x-auto py-2 -mx-2">
 							{/* Card 1 */}
