@@ -5,6 +5,7 @@ import { PrimeReactProvider } from "primereact/api";
 import LandingPage from "./components/landingPage/LandingPage";
 import WholeHouse from "./components/products/wholeHouseSystem/WholeHouse";
 import DrinkingWater from "./components/products/drinkingWaterSystem/DrinkingWater";
+import ContactUs from "./components/contactUs/ContactUs";
 import Banner from "./components/landingPage/banner/Banner";
 import NavBar from "./Navbar";
 import Footer from "./Footer";
@@ -59,12 +60,10 @@ function App() {
 					
 						<div className="col">
 							<Routes>
-								{/* <Route path="/logIn" element={<LogIn />} /> */}
 								<Route path="/home" element={<LandingPage />} />
 								<Route path="/products/wholeHouseSystems" element={<WholeHouse />} />
 								<Route path="/products/drinkingWaterSystems" element={<DrinkingWater />} />
-								{/* <Route path="submitScores" element={<SubmitScores />} /> */}
-								{/* <Route path="playerScores" element={<PlayerScores />} /> */}
+								<Route path="/contactUs" element={<ContactUs />} />
 							</Routes>
 						</div>
 				</div>

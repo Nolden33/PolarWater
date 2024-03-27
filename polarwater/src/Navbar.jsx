@@ -161,9 +161,9 @@ function Navbar() {
 							</div>
 							{/* Contact */}
 							<Link
-								to="/contaminates"
-								className={`${linkClass("/contaminates")} font-medium`}
-								aria-current={isActive("/contaminates") ? "page" : undefined}
+								to="/contactUs"
+								className={`${linkClass("/contactUs")} font-medium`}
+								aria-current={isActive("/contactUs") ? "page" : undefined}
 							>
 								Contact Us
 							</Link>

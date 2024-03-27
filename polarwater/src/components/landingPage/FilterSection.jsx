@@ -1,5 +1,4 @@
 import React from "react";
-import ReRe from "../../images/landingPage/filterSection/ReRe.jpg";
 import ReBg from "../../images/landingPage/filterSection/RihannaNoBg.png";
 
 function FilterSection() {
