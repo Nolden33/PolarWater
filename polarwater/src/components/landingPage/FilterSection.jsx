@@ -36,7 +36,7 @@ function FilterSection() {
                         {/* Cards Row */}
                         <div className="flex overflow-x-auto py-2 -mx-2 lg:w-3/4">
 							{/* Card 1 */}
-							<div className="flex-shrink-0 min-w-[300px] bg-white rounded-lg shadow mx-4">
+							<div className="flex-shrink-0 min-w-[300px] blueSix rounded-lg shadow mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
 										Product 1
@@ -54,7 +54,7 @@ function FilterSection() {
 							</div>
 
 							{/* Card 2 */}
-							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
+							<div className="min-w-[300px] blueSix rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
 										Product 2
@@ -72,7 +72,7 @@ function FilterSection() {
 							</div>
 
 							{/* Card 3 */}
-							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
+							<div className="min-w-[300px] blueSix rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
 										Product 3
@@ -90,7 +90,7 @@ function FilterSection() {
 							</div>
 
 							{/* Card 4 */}
-							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
+							<div className="min-w-[300px] blueSix rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
 										Product 4
@@ -108,7 +108,7 @@ function FilterSection() {
 							</div>
 
 							{/* Card 5 */}
-							<div className="min-w-[300px] bg-white rounded-lg shadow flex-shrink-0 mx-4">
+							<div className="min-w-[300px] blueSix rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
 										Product 5

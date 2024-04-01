@@ -61,7 +61,7 @@ function AccordionOne() {
 									Phone Number or Email
 								</label>
 								<input
-									className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+									className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
 									id="grid-contact"
 									type="text"
 									placeholder="Your contact information"
@@ -115,7 +115,7 @@ function AccordionOne() {
 									Best Time to Contact
 								</label>
 								<select
-									className="block w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+									className="appearance-none block w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
 									id="grid-time"
 								>
 									<option>Morning</option>
