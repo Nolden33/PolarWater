@@ -29,8 +29,8 @@ function WholeHouse() {
 							alt="Image Description"
 						/>
 					</div>
-					<div className="absolute bottom-48 lg:start-40 md:start-20 p-2">
-						<div className="p-3 text-3xl font-bold text-black">
+					<div className="absolute bottom-48 sm:bottom-52 lg:start-40 md:start-20 p-2">
+						<div className="p-3 text-4xl font-bold text-black">
                             Whole House Systems
 						</div>
 					</div>

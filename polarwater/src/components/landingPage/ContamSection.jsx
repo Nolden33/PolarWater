@@ -10,7 +10,7 @@ function ContamSection() {
 						{/* Content Section */}
 						<div className="lg:w-3/4 max-w-3xl flex flex-col items-center justify-start p-4 md:px-24 md:pt-8">
 							<div className="mb-4 space-y-4">
-								<h1 className="text-3xl font-bold text-gray-800 mb-2">
+								<h1 className="text-4xl font-bold text-gray-800 mb-2">
 									RiRi is under an umbrella cuz of these bullshit photos.
 								</h1>
 								<p className="text-gray-600">

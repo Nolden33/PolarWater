@@ -3,9 +3,10 @@ import React, { useState, useEffect } from "react";
 function LrgCntForm() {
 	return (
 		<React.Fragment>
-			<div className="row-start-3 col-span-5 row-span-2 flex justify-left items-center">
-				<div className="p-12 mb-4 w-full">
-                <h1 className="block uppercase underline decoration-white tracking-wide text-white text-xs font-black mb-2 text-left tracking-widest ps-8 mb-4">
+			<div className="row-start-3 col-span-5 row-span-2 flex ms-8 justify-left items-center">
+			<div class="flex flex-col blueSix border border-gray-200 shadow-sm rounded-md p-1 ">
+				<div className="p-2 mb-4 w-full">
+					<h1 className="block uppercase underline decoration-red-700 tracking-wide text-red-600 text-xs font-black mb-2 text-left tracking-widest ps-8 mb-4">
 						Contact Us
 					</h1>
 					<form className="space-y-4">
@@ -130,6 +131,7 @@ function LrgCntForm() {
 							</div>
 						</div>
 					</form>
+				</div>
 				</div>
 			</div>
 		</React.Fragment>

@@ -20,7 +20,7 @@ function FilterSection() {
 						{/* Content Section */}
 						<div className="lg:w-1/2 mt-8 h-full lg:absolute lg:top-1/4 xl:top-60 2xl:top-96 lg:left-3/4 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:flex lg:flex-col lg:items-center lg:justify-center lg:px-8 lg:pt-8">
 							<div className="mb-4 xl:px-20  space-y-4">
-								<h1 className="text-3xl font-bold text-gray-800 mb-2">
+								<h1 className="text-4xl font-bold text-gray-800 mb-2">
 									Transform the way you experience water!
 								</h1>
 								<p className="text-gray-600">

@@ -22,53 +22,82 @@ function ContactUs() {
 			title: "Schedule an Appointment",
 			content: <Acc2 />,
 		},
-        {
-            id: 3,
+		{
+			id: 3,
 			title: "Operating Hours",
-			content: 
-            <div className="p-4 text-lg text-left">
-                <p>Mon - Fri: 8am to 7pm</p>
-                <p>Sat & Sun: Closed</p>
-            </div>,
+			content: (
+				<div className="p-4 text-lg text-left">
+					<p>Mon - Fri: 8am to 7pm</p>
+					<p>Sat & Sun: Closed</p>
+				</div>
+			),
 		},
 		{
-            id: 4,
+			id: 4,
 			title: "Area of Operation",
-			content:
-            <img
-                src={Map}
-                alt="Map of the Inland Empire"
-                className="max-w-full h-auto rounded-lg"
-            />,
+			content: (
+				<div className="flex flex-col md:grid md:grid-rows-1 md:grid-cols-6 place-items-center">
+				<div className="md:row-span-1 md:col-span-3 bg-white flex flex-col">
+
+					{/* Grid for service areas */}
+					<div className="grid grid-cols-3 grid-rows-5 text-md text-gray-600 place-items-center">
+						<p>Banning</p>
+						<p>Moreno Valley</p>
+						<p>Riverside</p>
+						<p>Chino</p>
+						<p>Norco</p>
+						<p>San Bernardino</p>
+						<p>Colton</p>
+						<p>Ontario</p>
+						<p>Twentynine Palms</p>
+						<p>Corona</p>
+						<p>Perris</p>
+						<p>Yucca Valley</p>
+						<p>Fontana</p>
+						<p>Rialto</p>
+						<p>Rancho Cucamonga</p>
+					</div>
+				</div>
+
+				<div className="md:row-span-1 md:col-span-3 flex justify-center items-center">
+					<img
+						src={Map}
+						alt="Map of the Inland Empire"
+						className="max-w-full h-auto"
+					/>
+				</div>
+			</div>
+			),
 		},
-        {
-            id: 5,
-            title: "Social Medias",
-            content:
-                "This is the first item's accordion body. It is hidden by default...",
-        },
+		{
+			id: 5,
+			title: "Social Medias",
+			content:
+				"This is the first item's accordion body. It is hidden by default...",
+		},
 	];
 
 	return (
 		<React.Fragment>
-            {/* Title and Banner section */}
-            <div className="relative block overflow-hidden dark:focus:outline-none">
-                <div className="aspect-w-12 aspect-h-7 sm:aspect-none overflow-hidden">
-                    <img
-                        className="w-full h-80 object-cover"
-                        src={Water}
-                        alt="Water Filtration Systems"
-                    />
-                </div>
-                <div className="absolute bottom-48 lg:start-40 md:start-20 p-2">
-                    <div className="p-3 text-3xl font-bold text-black">Frequently Asked Questions</div>
-                </div>
-            </div>
+			{/* Title and Banner section */}
+			<div className="relative block overflow-hidden dark:focus:outline-none">
+				<div className="aspect-w-12 aspect-h-7 sm:aspect-none overflow-hidden">
+					<img
+						className="w-full h-80 object-cover"
+						src={Water}
+						alt="Water Filtration Systems"
+					/>
+				</div>
+				<div className="absolute bottom-48 sm:bottom-52 lg:start-28 md:start-16 p-2">
+					<div className="p-3 text-4xl font-bold text-black">
+						Frequently Asked Questions
+					</div>
+				</div>
+			</div>
 
-            {/* Grid Layout */}
+			{/* Grid Layout */}
 			<div className="container mx-auto p-4 lg:px-40">
 				<div className="grid grid-rows-3 gap-4 p-4">
-
 					{/* Accordion for Contact Us, Schedule, and Social Medias */}
 					<div className="flex flex-col gap-4">
 						{accordionItems.map(({ id, title, content }) => (
