@@ -4,7 +4,7 @@ import CarTwo from "./CarTwo";
 
 function Banner() {
     const [activeSlide, setActiveSlide] = useState(0);
-    const totalSlides = 2; // Assuming you have 3 slides
+    const totalSlides = 1; // Assuming you have 3 slides
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -38,10 +38,10 @@ function Banner() {
                 <div className="overflow-hidden w-full min-h-[350px] bg-white shadow-lg">
                     <div className="flex transition-transform duration-700  " style={slideStyles}>
                         <div className="min-w-full">
-                            <CarOne />
+                            <CarTwo />
                         </div>
                         <div className="min-w-full">
-                            <CarTwo />
+                            {/* <CarTwo /> */}
                         </div>
                         <div className="min-w-full hidden">
                             <div className="flex justify-center h-full bg-gray-300 p-6">
