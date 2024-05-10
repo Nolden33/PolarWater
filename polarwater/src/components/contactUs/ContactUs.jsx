@@ -19,7 +19,7 @@ function ContactUs() {
 		},
 		{
 			id: 2,
-			title: "Schedule an Appointment",
+			title: "Schedule a Phone Consultation",
 			content: <Acc2 />,
 		},
 		{
@@ -57,6 +57,7 @@ function ContactUs() {
 						<p>Rialto</p>
 						<p>Rancho Cucamonga</p>
 					</div>
+					<div className="text-md text-gray-600 place-items-center">***Restrictions Apply***</div>
 				</div>
 
 				<div className="md:row-span-1 md:col-span-3 flex justify-center items-center">

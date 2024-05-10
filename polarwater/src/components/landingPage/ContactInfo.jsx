@@ -4,11 +4,11 @@ import Map from "../../images/landingPage/contactInfo/InlandEmpire.gif";
 function ContactInfo() {
 	return (
 		<React.Fragment>
-			<h1 className="text-4xl font-bold mb-6 text-center sm:text-left sm:col-span-6">
+			<h1 className="text-4xl font-bold mb-6 text-center">
 				Hours & Areas of Operation
 			</h1>
-			<div className="mb-8 flex flex-col md:grid md:grid-rows-1 md:grid-cols-6 md:gap-6 place-items-center">
-				<div className="md:row-span-1 md:col-span-3 bg-white p-6 flex flex-col justify-between">
+			<div className="mb-8 flex flex-col md:grid md:grid-rows-1 md:grid-cols-6 md:gap-6 place-items-center place-content-evenly">
+				<div className="md:row-span-1 md:col-span-3 bg-white p-6 flex flex-col">
 					<div>
 						<p className="text-xl font-semibold text-gray-800 mb-4">
 							Customer Care Availability
@@ -43,6 +43,7 @@ function ContactInfo() {
 						<p>Rialto</p>
 						<p>Rancho Cucamonga</p>
 					</div>
+					<div className="text-md text-gray-600 place-items-center">***Restrictions Apply***</div>
 				</div>
 
 				<div className="md:row-span-1 md:col-span-3 flex justify-center items-center mt-4 sm:mt-0">
