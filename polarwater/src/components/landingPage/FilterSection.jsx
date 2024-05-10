@@ -1,5 +1,6 @@
 import React from "react";
 import ReBg from "../../images/landingPage/filterSection/RihannaNoBg.png";
+import Rere from "../../images/landingPage/filterSection/ReRe.jpg";
 
 function FilterSection() {
 	return (
@@ -18,9 +19,9 @@ function FilterSection() {
 						</div>
 
 						{/* Content Section */}
-						<div className="lg:w-1/2 mt-8 h-full lg:absolute lg:top-1/4 xl:top-60 2xl:top-96 lg:left-3/4 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:flex lg:flex-col lg:items-center lg:justify-center lg:px-8 lg:pt-8">
+						<div className="lg:w-1/2 mt-8 h-full lg:absolute lg:top-1/4 lg:top-64 xl:top-60 2xl:top-96 lg:left-3/4 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:flex lg:flex-col lg:items-center lg:justify-center lg:px-8 lg:pt-8">
 							<div className="mb-4 xl:px-20  space-y-4">
-								<h1 className="text-4xl font-bold text-gray-800 mb-2">
+								<h1 className="text-4xl font-extrabold font-serif uppercase text-gray-800 mb-2">
 									Transform the way you experience water!
 								</h1>
 								<p className="text-gray-600">
@@ -32,7 +33,7 @@ function FilterSection() {
 					</div>
 
 					{/* Cards Row */}
-                    <div className="hideScroll 2xl:top-1/3 xl:top-1/3 lg:top-1/3 lg:absolute lg:mt-40 xl:mt-52 2xl:mt-80 bottom-0 right-0 lg:left-1/3 z-20 w-full lg:overflow-hidden pe-20">
+                    <div className="hideScroll 2xl:top-1/3 xl:top-1/3 lg:top-2/5 lg:absolute lg:mt-40 xl:mt-60 2xl:mt-80 bottom-0 right-0 lg:left-1/3 z-20 w-full lg:overflow-hidden pe-20">
                         {/* Cards Row */}
                         <div className="flex overflow-x-auto py-2 -mx-2 lg:w-3/4">
 							{/* Card 1 */}

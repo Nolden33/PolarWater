@@ -9,7 +9,7 @@ function ProductPhone() {
             <div className="container mx-auto p-4 pt-12 flex flex-col items-center justify-center">
                 
                 <div className="mx-auto">
-                    <h3 className="text-3xl font-bold text-gray-800 dark:text-black mb-4">
+                    <h3 className="text-3xl font-extrabold font-serif uppercase text-gray-800 mb-4">
                         Reverse Osmosis Systems
                     </h3>
                     <p className="w-full text-pretty px-6 pt-4 text-center text-sm font-medium text-gray-800">

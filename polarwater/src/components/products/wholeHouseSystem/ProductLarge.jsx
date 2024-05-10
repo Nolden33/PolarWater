@@ -8,7 +8,7 @@ function ProductLarge() {
 				<div id="PRODUCTONE" className="rounded-xl bg-white sm:flex justify-center my-20">
                 <div className="flex flex-col md:flex-col-reverse flex-wrap">
 						<div className="flex h-full flex-col p-4 me-8 sm:p-7">
-							<h1 className="text-3xl font-bold text-gray-800 dark:text-black mb-4">
+							<h1 className="text-3xl font-extrabold font-serif uppercase text-gray-800 mb-4">
 								Non-Electric Conditioner
 							</h1>
 							<p className="mt-1 text-gray-800 dark:text-gray-800 max-w-md">
@@ -43,7 +43,7 @@ function ProductLarge() {
 					</div>
 					<div className="flex flex-wrap">
 						<div className="flex h-full flex-col p-4 ms-8 sm:p-7">
-							<h3 className="text-3xl font-bold text-gray-800 dark:text-black mb-4">
+							<h3 className="text-3xl font-extrabold font-serif uppercase text-gray-800 mb-4">
 								Penguin Water Non-electric<br />Upflow Filter
 							</h3>
 							<p className="mt-1 text-gray-800 dark:text-gray-800 max-w-md">

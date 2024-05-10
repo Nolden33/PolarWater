@@ -4,7 +4,7 @@ import Map from "../../images/landingPage/contactInfo/InlandEmpire.gif";
 function ContactInfo() {
 	return (
 		<React.Fragment>
-			<h1 className="text-4xl font-bold mb-6 text-center">
+			<h1 className="text-4xl font-extrabold font-serif uppercase text-gray-800 mb-2">
 				Hours & Areas of Operation
 			</h1>
 			<div className="mb-8 flex flex-col md:grid md:grid-rows-1 md:grid-cols-6 md:gap-6 place-items-center place-content-evenly">
