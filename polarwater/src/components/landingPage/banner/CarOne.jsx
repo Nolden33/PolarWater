@@ -50,7 +50,7 @@ function CarOne() {
 					{/* Company Name */}
 					<div className="col-start-0 col-span-12 row-span-1 sm:col-span-3 sm:row-span-2  flex justify-center lg:justify-end items-center">
 						<div className="lg:pe-12 xl:pe-16 2xl:pe-20">
-							<h1 className="text-gray-800 text-5xl md:text-5xl lg:text-7xl xl:text-8xl dark:text-gray-200 font-bold">
+							<h1 className="text-gray-800 text-6xl md:text-5xl lg:text-7xl xl:text-8xl dark:text-gray-200 font-bold">
 								Polar {""}
 								{showBreak && <br />}
 								<span className="bg-clip-text text-transparent bg-gradient-to-tl from-blue-600 to-cyan-400">

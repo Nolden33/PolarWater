@@ -6,7 +6,7 @@ function FilterSection() {
 	return (
 		<React.Fragment>
 			<div className="container mx-auto p-4">
-				<div className="overflow-visible w-full h-full">
+				<div className="overflow-visible w-full h-full mb-8">
 					<div className="flex flex-col lg:flex-row">
 						{/* Image Section */}
 						<div className="lg:w-1/2">
@@ -50,7 +50,9 @@ function FilterSection() {
 									alt="Card 1"
 								/>
 								<div className="p-4">
-									<p className="text-gray-600">View more...</p>
+									<a href="#" className="text-blue-600 hover:underline">
+                                        View more...
+                                    </a>
 								</div>
 							</div>
 
@@ -68,7 +70,9 @@ function FilterSection() {
 									alt="Card 2"
 								/>
 								<div className="p-4">
-									<p className="text-gray-600">View more...</p>
+									<a href="#" className="text-blue-600 hover:underline">
+                                        View more...
+                                    </a>
 								</div>
 							</div>
 
@@ -86,7 +90,9 @@ function FilterSection() {
 									alt="Card 3"
 								/>
 								<div className="p-4">
-									<p className="text-gray-600">View more...</p>
+									<a href="#" className="text-blue-600 hover:underline">
+                                        View more...
+                                    </a>
 								</div>
 							</div>
 
@@ -104,12 +110,14 @@ function FilterSection() {
 									alt="Card 4"
 								/>
 								<div className="p-4">
-									<p className="text-gray-600">View more...</p>
+									<a href="#" className="text-blue-600 hover:underline">
+                                        View more...
+                                    </a>
 								</div>
 							</div>
 
 							{/* Card 5 */}
-							<div className="min-w-[300px] blueSix rounded-lg shadow flex-shrink-0 mx-4">
+							<div className="min-w-[300px] bg-gray-200 rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
 										Product 5
@@ -122,7 +130,9 @@ function FilterSection() {
 									alt="Card 5"
 								/>
 								<div className="p-4">
-									<p className="text-gray-600">View more...</p>
+									<a href="#" className="text-blue-600 hover:underline">
+                                        View more...
+                                    </a>
 								</div>
 							</div>
 							<div className="hidden lg:flex flex-shrink-0 w-4 mx-10 lg:w-8"></div>

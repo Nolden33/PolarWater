@@ -5,7 +5,7 @@ function IntroSection() {
     return (
         <React.Fragment>
             <div className="container mx-auto p-4 relative">
-                <div className="overflow-hidden relative w-full h-full">
+                <div className="overflow-hidden relative w-full h-full my-8">
                     <h1 id="small" className="text-4xl font-extrabold font-serif uppercase text-gray-800 mb-2 2xl:hidden">
                         Get the water you expect with<br></br>Polar Water
                     </h1>
