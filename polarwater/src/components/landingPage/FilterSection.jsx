@@ -25,7 +25,7 @@ function FilterSection() {
 									Transform the way you experience water!
 								</h1>
 								<p className="text-gray-600">
-								Polar Water LLC offers premier water filtration solutions tailored to your unique needs, ensuring your home enjoys clean, safe, and refreshing water. Our range of cutting-edge, carbon-based, whole-house systems are designed for superior performance without salt, catering to various water quality issues. We provide personalized systems, professional installation, and dedicated ongoing maintenance for optimal functionality. Committed to customer satisfaction, our team ensures a seamless process from consultation to post-installation support. Choose Polar Water LLC for quality, reliability, and a healthier water experience.
+								Polar Water offers customized water filtration systems to match your specific requirements, addressing issues like hard water and chlorine taste. Our expert team provides professional installation and ongoing maintenance services to ensure your system operates at peak performance. We prioritize customer satisfaction, guiding you through every step from initial consultation to post-installation support. Experience unmatched quality, reliability, and peace of mind with Polar Water.
 								</p>
 								
 							</div>
