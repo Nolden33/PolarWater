@@ -26,7 +26,7 @@ function ContactUs() {
 			id: 3,
 			title: "Operating Hours",
 			content: (
-				<div className="p-4 text-lg text-left">
+				<div className="text-lg text-left">
 					<p>Mon - Fri: 8am to 7pm</p>
 					<p>Sat & Sun: Closed</p>
 				</div>

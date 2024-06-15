@@ -70,60 +70,68 @@ function AccordionTwo() {
 						</div>
 
 						{/* Row 3: Preferred Method of Contact and Best Time to Contact */}
-						<div className="flex flex-wrap -mx-3">
-							<div className="w-full md:w-1/2 px-3 mb-6 md:mb-0 flex items-center">
-								<fieldset className="w-full">
-									<legend className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-										Preferred Method of Contact
-									</legend>
-									<div className="flex space-x-4">
-										<label className="inline-flex items-center">
-											<input
-												type="radio"
-												className="form-radio"
-												name="contactMethod"
-												value="text"
-											/>
-											<span className="ml-2">Text</span>
-										</label>
-										<label className="inline-flex items-center">
-											<input
-												type="radio"
-												className="form-radio"
-												name="contactMethod"
-												value="call"
-											/>
-											<span className="ml-2">Call</span>
-										</label>
-										<label className="inline-flex items-center">
-											<input
-												type="radio"
-												className="form-radio"
-												name="contactMethod"
-												value="email"
-											/>
-											<span className="ml-2">Email</span>
-										</label>
-									</div>
-								</fieldset>
-							</div>
-							<div className="w-full md:w-1/2 px-3">
-								<label
-									className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-									htmlFor="grid-time"
-								>
-									Best Time to Contact
-								</label>
-								<select
-									className="block w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-									id="grid-time"
-								>
-									<option>Morning</option>
-									<option>Mid-Day</option>
-									<option>Evening</option>
-								</select>
-							</div>
-						</div>
+						<div className="flex flex-wrap -mx-3 items-center">
+                    <div className="w-full md:w-2/5 px-3 mb-6 md:mb-0 flex items-center">
+                        <fieldset className="w-full">
+                            <legend className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                                Preferred Method of Contact
+                            </legend>
+                            <div className="flex justify-center space-x-4">
+                                <label className="inline-flex items-center">
+                                    <input
+                                        type="radio"
+                                        className="form-radio"
+                                        name="contactMethod"
+                                        value="text"
+                                    />
+                                    <span className="ml-2">Text</span>
+                                </label>
+                                <label className="inline-flex items-center">
+                                    <input
+                                        type="radio"
+                                        className="form-radio"
+                                        name="contactMethod"
+                                        value="call"
+                                    />
+                                    <span className="ml-2">Call</span>
+                                </label>
+                                <label className="inline-flex items-center">
+                                    <input
+                                        type="radio"
+                                        className="form-radio"
+                                        name="contactMethod"
+                                        value="email"
+                                    />
+                                    <span className="ml-2">Email</span>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div className="w-full md:w-2/5 px-3">
+                        <label
+                            className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            htmlFor="grid-time"
+                        >
+                            Best Time to Contact
+                        </label>
+                        <select
+                            className="block w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="grid-time"
+                        >
+                            <option>Morning</option>
+                            <option>Mid-Day</option>
+                            <option>Evening</option>
+                        </select>
+                    </div>
+                    <div className="w-full md:w-1/5 px-3">
+                        <button
+                            type="submit"
+                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                        >
+                            Submit
+                        </button>
+                    </div>
+                </div>
 					</form>
         </React.Fragment>
     );
