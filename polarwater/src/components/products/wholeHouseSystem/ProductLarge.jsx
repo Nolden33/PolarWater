@@ -1,5 +1,6 @@
 import React from "react";
-import rere from "../../../images/landingPage/filterSection/ReRe.jpg";
+import upflow from "../../../images/products/wholeHouse/CarbonmMediaPNG.png";
+import conditioner from "../../../images/products/wholeHouse/ConditioningmediaPNG.png";
 
 function ProductLarge() {
 	return (
@@ -25,7 +26,7 @@ function ProductLarge() {
 					<div className="relative w-full flex-shrink-0 overflow-hidden rounded-r-xl shadow-md drop-shadow-lg sm:max-w-60 sm:rounded-s-xl md:max-w-xs md:rounded-s-none">
 						<img
 							className="productPic aspect-square object-center start-0 top-0 size-full object-cover"
-							src="https://people.com/thmb/fDIAi5YEfYzCDZ9V2L1p0jjaxpU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(647x374:649x376)/rihanna-ce5065da13d4440d9fe8a58333501c16.jpg"
+							src={conditioner}
 							alt="Image Description"
 						/>
 					</div>
@@ -37,7 +38,7 @@ function ProductLarge() {
 					<div className="relative w-full flex-shrink-0 overflow-hidden rounded-t-xl shadow-md drop-shadow-lg sm:max-w-60 sm:rounded-s-xl md:max-w-xs md:rounded-se-none">
 						<img
 							className="productPic aspect-square object-top start-0 top-0 size-full object-cover"
-							src={rere}
+							src={upflow}
 							alt="Image Description"
 						/>
 					</div>

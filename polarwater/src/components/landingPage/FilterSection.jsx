@@ -1,6 +1,12 @@
 import React from "react";
 import ReBg from "../../images/landingPage/filterSection/RihannaNoBg.png";
 import Rere from "../../images/landingPage/filterSection/ReRe.jpg";
+import upflow from "../../images/products/wholeHouse/CarbonmMediaPNG.png";
+import conditioner from "../../images/products/wholeHouse/ConditioningmediaPNG.png";
+import Five from "../../images/products/drinkingWater/FiveStage.png";
+import Six from "../../images/products/drinkingWater/ROPNG.png";
+import tank from "../../images/products/drinkingWater/TankPNG.png";
+import housing from "../../images/products/drinkingWater/FilterhousingPNG.png";
 
 function FilterSection() {
 	return (
@@ -40,13 +46,13 @@ function FilterSection() {
 							<div className="flex-shrink-0 min-w-[300px] bg-gray-200 rounded-lg shadow mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
-										Product 1
+										upflow
 									</h3>
 									{/* <p className="text-gray-600">Description of card 1.</p> */}
 								</div>
 								<img
 									className="h-40 w-full object-cover mt-2"
-									src="https://source.unsplash.com/random/260x160?sig=6"
+									src={upflow}
 									alt="Card 1"
 								/>
 								<div className="p-4">
@@ -60,13 +66,13 @@ function FilterSection() {
 							<div className="min-w-[300px] bg-gray-200 rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
-										Product 2
+									conditioner
 									</h3>
 									{/* <p className="text-gray-600">Description of card 2.</p> */}
 								</div>
 								<img
 									className="h-40 w-full object-cover mt-2"
-									src="https://source.unsplash.com/random/260x160?sig=7"
+									src={conditioner}
 									alt="Card 2"
 								/>
 								<div className="p-4">
@@ -80,13 +86,13 @@ function FilterSection() {
 							<div className="min-w-[300px] bg-gray-200 rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
-										Product 3
+									Five
 									</h3>
 									{/* <p className="text-gray-600">Description of card 3.</p> */}
 								</div>
 								<img
 									className="h-40 w-full object-cover mt-2"
-									src="https://source.unsplash.com/random/260x160?sig=8"
+									src={Five}
 									alt="Card 3"
 								/>
 								<div className="p-4">
@@ -100,13 +106,13 @@ function FilterSection() {
 							<div className="min-w-[300px] bg-gray-200 rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
-										Product 4
+										Six
 									</h3>
 									{/* <p className="text-gray-600">Description of card 4.</p> */}
 								</div>
 								<img
 									className="h-40 w-full object-cover mt-2"
-									src="https://source.unsplash.com/random/260x160?sig=9"
+									src={Six}
 									alt="Card 4"
 								/>
 								<div className="p-4">
@@ -120,14 +126,34 @@ function FilterSection() {
 							<div className="min-w-[300px] bg-gray-200 rounded-lg shadow flex-shrink-0 mx-4">
 								<div className="p-4">
 									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
-										Product 5
+										Tank
 									</h3>
 									{/* <p className="text-gray-600">Description of card 5.</p> */}
 								</div>
 								<img
 									className="h-40 w-full object-cover mt-2"
-									src="https://source.unsplash.com/random/260x160?sig=10"
+									src={tank}
 									alt="Card 5"
+								/>
+								<div className="p-4">
+									<a href="#" className="text-blue-600 hover:underline">
+                                        View more...
+                                    </a>
+								</div>
+							</div>
+
+							{/* Card 6 */}
+							<div className="min-w-[300px] bg-gray-200 rounded-lg shadow flex-shrink-0 mx-4">
+								<div className="p-4">
+									<h3 className="text-2xl font-semibold text-gray-800 mb-2">
+									housing
+									</h3>
+									{/* <p className="text-gray-600">Description of card 4.</p> */}
+								</div>
+								<img
+									className="h-40 w-full object-cover mt-2"
+									src={housing}
+									alt="Card 4"
 								/>
 								<div className="p-4">
 									<a href="#" className="text-blue-600 hover:underline">

@@ -1,6 +1,6 @@
 import React from "react";
 import Five from "../../../images/products/drinkingWater/FiveStage.png";
-import Six from "../../../images/products/drinkingWater/SixStage.png";
+import Six from "../../../images/products/drinkingWater/ROPNG.png";
 
 function ProductLarge() {
 	return (

@@ -1,5 +1,6 @@
 import React from "react";
-import rere from "../../../images/landingPage/filterSection/ReRe.jpg";
+import upflow from "../../../images/products/wholeHouse/CarbonmMediaPNG.png";
+import conditioner from "../../../images/products/wholeHouse/ConditioningmediaPNG.png";
 
 function ProductPhone() {
     return (
@@ -18,7 +19,7 @@ function ProductPhone() {
                     <div className="md:flex md:flex-row-reverse items-center justify-center">
                         <img
                             className="w-full md:w-auto object-cover rounded-xl shadow-md drop-shadow-lg mx-auto md:mx-0 my-4 md:my-0"
-                            src="https://people.com/thmb/fDIAi5YEfYzCDZ9V2L1p0jjaxpU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(647x374:649x376)/rihanna-ce5065da13d4440d9fe8a58333501c16.jpg"
+                            src={conditioner}
                             alt="Image Description"
                         />
                         <div className="flex flex-col p-4 md:p-7 text-center md:text-left">
@@ -40,7 +41,7 @@ function ProductPhone() {
                     <div className="md:flex items-center justify-center">
                         <img
                             className="w-full md:w-auto object-cover rounded-xl shadow-md drop-shadow-lg mx-auto md:mx-0 my-4 md:my-0"
-                            src={rere}
+                            src={upflow}
                             alt="Image Description"
                         />
                         <div className="flex flex-col p-4 md:p-7 text-center md:text-left">

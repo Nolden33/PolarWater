@@ -17,13 +17,15 @@ function ContamSection() {
     ];
 
     const Card = ({ title, description, image }) => (
-        <div className="flex-shrink-0 min-w-[300px] max-w-[300px] mx-2">
-            <div className="p-4">
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
-                <p className="text-gray-600">{description}</p>
-            </div>
-            <div className="flex justify-center">
-                <img className="h-48 w-48 object-cover mt-2 rounded-full shadow" src={image} alt={title} />
+        <div className="flex-shrink-0 min-w-[300px] max-w-[300px] mx-2 h-full">
+            <div className="p-4 h-full flex flex-col justify-between">
+                <div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
+                    <p className="text-gray-600 min-h-[150px]">{description}</p>
+                </div>
+                <div className="flex justify-center mt-4">
+                    <img className="h-48 w-48 object-cover mt-2 rounded-full shadow" src={image} alt={title} />
+                </div>
             </div>
         </div>
     );
@@ -52,11 +54,11 @@ function ContamSection() {
                             <div className="hidden lg:flex flex-shrink-0 w-4 mx-10 lg:w-8"></div>
                         </div>
                     </div>
-					<div className="flex justify-center md:justify-end">
-						<button type="button" class="mt-12 mb-4 md:mb-0 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent blueOne text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
-						    Test the Water in Your Area
-						</button>
-					</div>
+                    <div className="flex justify-center md:justify-end">
+                        <button type="button" className="mt-12 mb-4 md:mb-0 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent blueOne text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+                            Test the Water in Your Area
+                        </button>
+                    </div>
                 </div>
             </div>
         </React.Fragment>

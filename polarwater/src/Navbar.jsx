@@ -114,19 +114,19 @@ function Navbar() {
           </div>
           <div className="hidden sm:flex sm:items-center ml-auto">
             <div className="flex flex-col sm:items-end gap-2">
-              <a href="tel:+1234567890" className="text-white">
-                +1 (234) 567-890
+              <a href="tel:+19512125633" className="text-white">
+                +1 (951) 212-5633
               </a>
-              <a href="mailto:info@example.com" className="text-white">
-                info@example.com
+              <a href="mailto:Polarwaterllc@gmail.com" className="text-white">
+                Polarwaterllc@gmail.com
               </a>
             </div>
           </div>
           <div className="sm:hidden flex items-center">
-            <a href="tel:+1234567890" className="text-white mr-4">
+            <a href="tel:+19512125633" className="text-white mr-4">
               <i className="fas fa-phone"></i>
             </a>
-            <a href="mailto:info@example.com" className="text-white">
+            <a href="mailto:Polarwaterllc@gmail.com" className="text-white">
               <i className="fas fa-envelope"></i>
             </a>
             <button
