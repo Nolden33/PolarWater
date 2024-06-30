@@ -36,10 +36,11 @@ function ContamSection() {
                 <div className="overflow-hidden relative w-full h-full">
                     <div className="flex flex-col lg:flex-row">
                         <div className="lg:w-3/4 max-w-3xl flex flex-col items-center justify-start p-4 md:px-24 md:pt-8">
-                            <div className="mb-4 space-y-4">
+                            <div className="mb-4 space-y-8">
                                 <h1 className="text-4xl font-extrabold font-serif uppercase text-gray-800 mb-2">
                                     Common Water Contaminates
                                 </h1>
+                                <div className="w-3/4 md:w-2/5 mx-auto my-4 h-1 bg-red-700"></div>
                                 <p className="text-gray-600">
                                     These are the most common water contaminates in our public drinking water that are caused by either water treatment, industrial runoff, or occurring naturally:
                                 </p>
