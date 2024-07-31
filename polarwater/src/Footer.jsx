@@ -15,13 +15,13 @@ function Footer() {
 				{/* Column 2 */}
 				<div className="mb-4 md:mb-0">
 					<div className="flex flex-col mt-2">
-						<a href="tel:+19512125633" className="text-white py-2">
+						<a href="tel:+19512125633" className="text-white text-lg py-2">
 							<i className="fas fa-phone mr-2"></i>
 							+1 (951) 212-5633
 						</a>
 						<a
 							href="mailto:Polarwaterllc@gmail.com"
-							className="text-white py-2"
+							className="text-white text-lg py-2"
 						>
 							<i className="fas fa-envelope mr-2"></i>
 							Polarwaterllc@gmail.com

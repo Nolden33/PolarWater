@@ -41,7 +41,7 @@ function ProductLarge() {
                                                         alt="Five Stage Reverse Osmosis System"
                                                         onClick={() => handleImageClick(Five)}
                                                     />
-                                                    <p className="px-6 pb-3 text-center text-lg font-medium uppercase text-gray-500 dark:text-gray-900">
+                                                    <p className="px-6 pb-3 text-center text-2xl font-medium uppercase text-gray-500 dark:text-gray-900">
                                                         5 Stage
                                                     </p>
                                                 </th>
@@ -52,7 +52,7 @@ function ProductLarge() {
                                                         alt="Six Stage Reverse Osmosis System"
                                                         onClick={() => handleImageClick(Six)}
                                                     />
-                                                    <p className="px-6 pb-3 text-center text-lg font-medium uppercase text-gray-500 dark:text-gray-900">
+                                                    <p className="px-6 pb-3 text-center text-2xl font-medium uppercase text-gray-500 dark:text-gray-900">
                                                         6 Stage
                                                     </p>
                                                 </th>
@@ -61,87 +61,87 @@ function ProductLarge() {
                                         <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                                             <tr>
                                                 <td className="whitespace-normal lg:px-6 lg:py-4 text-sm font-medium text-gray-800 dark:text-gray-200">
-                                                    <p className="whitespace-nowrap text-lg text-gray-800">
+                                                    <p className="whitespace-nowrap text-xl text-gray-800">
                                                         5 Micron Sediment Filter
                                                     </p>
                                                     <p className="whitespace-normal px-6 text-sm text-gray-600 dark:text-gray-500">
                                                         Reduces Dirt, Sand, and Rust
                                                     </p>
                                                 </td>
-                                                <td className="whitespace-normal px-6 py-4 text-sm text-gray-800">
+                                                <td className="whitespace-normal px-6 py-4 text-xl text-gray-800">
                                                     Yes
                                                 </td>
-                                                <td className="whitespace-normal px-6 py-4 text-sm text-gray-800">
+                                                <td className="whitespace-normal px-6 py-4 text-xl text-gray-800">
                                                     Yes
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td className="whitespace-normal px-6 py-4 text-sm font-medium text-gray-800 dark:text-gray-200">
-                                                    <p className="whitespace-normal text-lg text-gray-800">
+                                                    <p className="whitespace-normal text-xl text-gray-800">
                                                         Carbon Block Filter
                                                     </p>
                                                     <p className="whitespace-normal px-6 text-sm text-gray-600 dark:text-gray-500">
                                                         Reduces Chlorine, Tastes, and Odors
                                                     </p>
                                                 </td>
-                                                <td className="whitespace-normal px-6 py-4 text-sm text-gray-800">
+                                                <td className="whitespace-normal px-6 py-4 text-xl text-gray-800">
                                                     Yes
                                                 </td>
-                                                <td className="whitespace-normal px-6 py-4 text-sm text-gray-800">
+                                                <td className="whitespace-normal px-6 py-4 text-xl text-gray-800">
                                                     Yes
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td className="whitespace-normal px-6 py-4 text-sm font-medium text-gray-800 dark:text-gray-200">
-                                                    <p className="whitespace-normal text-lg text-gray-800">
+                                                    <p className="whitespace-normal text-xl text-gray-800">
                                                         1 Micron Special Blend Filter
                                                     </p>
                                                     <p className="whitespace-normal px-6 text-sm text-gray-600 dark:text-gray-500">
                                                         Reduces Chloramine, Lead, and Cysts
                                                     </p>
                                                 </td>
-                                                <td className="whitespace-normal px-6 py-4 text-sm text-gray-800">
+                                                <td className="whitespace-normal px-6 py-4 text-xl text-gray-800">
                                                     Yes
                                                 </td>
-                                                <td className="whitespace-normal px-6 py-4 text-sm text-gray-800">
+                                                <td className="whitespace-normal px-6 py-4 text-xl text-gray-800">
                                                     Yes
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td className="whitespace-normal px-6 py-4 text-sm font-medium text-gray-800 dark:text-gray-200">
-                                                    <p className="whitespace-normal text-lg text-gray-800">
+                                                    <p className="whitespace-normal text-xl text-gray-800">
                                                         50 GPD or 100 GPD RO Membrane
                                                     </p>
                                                     <p className="whitespace-normal px-6 text-sm text-gray-600 dark:text-gray-500">
                                                         Reverse Osmosis Process
                                                     </p>
                                                 </td>
-                                                <td className="whitespace-normal px-6 py-4 text-sm text-gray-800">
+                                                <td className="whitespace-normal px-6 py-4 text-xl text-gray-800">
                                                     Yes
                                                 </td>
-                                                <td className="whitespace-normal px-6 py-4 text-sm text-gray-800">
+                                                <td className="whitespace-normal px-6 py-4 text-xl text-gray-800">
                                                     Yes
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td className="whitespace-normal px-6 py-4 text-sm font-medium text-gray-800 dark:text-gray-200">
-                                                    <p className="whitespace-normal text-lg text-gray-800">
+                                                    <p className="whitespace-normal text-xl text-gray-800">
                                                         Carbon Post-Filter
                                                     </p>
                                                     <p className="whitespace-normal px-6 text-sm text-gray-600 dark:text-gray-500">
                                                         Refines and Enhances Taste
                                                     </p>
                                                 </td>
-                                                <td className="whitespace-normal px-6 py-4 text-sm text-gray-800">
+                                                <td className="whitespace-normal px-6 py-4 text-xl text-gray-800">
                                                     Yes
                                                 </td>
-                                                <td className="whitespace-normal px-6 py-4 text-sm text-gray-800">
+                                                <td className="whitespace-normal px-6 py-4 text-xl text-gray-800">
                                                     Yes
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td className="whitespace-normal px-6 py-4 text-sm font-medium text-gray-800 dark:text-gray-200">
-                                                    <p className="whitespace-normal text-lg text-gray-800">
+                                                    <p className="whitespace-normal text-xl text-gray-800">
                                                         Alkaline Cartridge
                                                     </p>
                                                     <p className="whitespace-normal px-6 text-sm text-gray-600 dark:text-gray-500">
@@ -149,10 +149,10 @@ function ProductLarge() {
                                                         typically to between 8.5 – 10.0
                                                     </p>
                                                 </td>
-                                                <td className="whitespace-normal px-6 py-4 text-sm text-gray-800">
+                                                <td className="whitespace-normal px-6 py-4 text-xl text-gray-800">
                                                     No
                                                 </td>
-                                                <td className="whitespace-normal px-6 py-4 text-sm text-gray-800">
+                                                <td className="whitespace-normal px-6 py-4 text-xl text-gray-800">
                                                     Yes
                                                 </td>
                                             </tr>

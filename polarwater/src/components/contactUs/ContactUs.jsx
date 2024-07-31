@@ -109,7 +109,7 @@ function ContactUs() {
 								} rounded-lg overflow-hidden transition-colors`}
 							>
 								<button
-									className={`flex justify-between items-center w-full px-5 py-4 text-left text-gray-800 font-medium hover:bg-gray-100 focus:outline-none ${
+									className={`flex justify-between items-center text-2xl w-full px-5 py-4 text-left text-gray-800 font-medium hover:bg-gray-100 focus:outline-none ${
 										activeId === id ? "text-blue-600" : ""
 									}`}
 									aria-expanded={activeId === id}

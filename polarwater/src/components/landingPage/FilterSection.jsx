@@ -43,7 +43,7 @@ function FilterSection() {
                                     Transform the way you experience water!
                                 </h1>
 								<div className="w-3/4 md:w-3/5 mx-auto my-4 h-1 bg-red-700"></div>
-                                <p className="text-gray-600">
+                                <p className="text-gray-600 text-lg">
                                     Polar Water offers customized water filtration systems to match your specific requirements, addressing issues like hard water and chlorine taste. Our expert team provides professional installation and ongoing maintenance services to ensure your system operates at peak performance. We prioritize customer satisfaction, guiding you through every step from initial consultation to post-installation support. Experience unmatched quality, reliability, and peace of mind with Polar Water.
                                 </p>
                             </div>

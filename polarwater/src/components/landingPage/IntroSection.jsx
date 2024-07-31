@@ -16,7 +16,7 @@ function IntroSection() {
                                     Get the water you expect with Polar Water
                                 </h1>
                                 <div className="hidden 2xl:block w-3/5 mx-auto my-4 h-1 bg-red-700"></div>
-                                <p className="text-gray-600">
+                                <p className="text-gray-600 text-lg">
                                     Welcome to Polar Water, your premier destination for high-quality water filtration solutions tailored to your needs! At Polar Water, we specialize in providing top-of-the-line water filtration equipment designed to ensure clean, safe, and refreshing water for your entire household. Our comprehensive range of products includes whole-house water filtration systems that utilize cutting-edge carbon-based technology, delivering superior filtration performance without the need for salt.
                                 </p>
                             </div>

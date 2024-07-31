@@ -9,7 +9,7 @@ function ContactInfo() {
                     Hours & Areas of Operation
                 </h1>
                 <div className="w-3/4 md:w-1/4 mx-auto my-4 h-1 bg-red-700"></div>
-                <div className="overflow-hidden relative w-full h-full">
+                <div className="overflow-hidden relative w-full h-full text-lg">
                     <div className="flex flex-col lg:flex-row justify-evenly items-center">
                         <div id="div1" className="lg:w-1/2 max-w-3xl bg-white md:p-6 flex flex-col">
                             <div>

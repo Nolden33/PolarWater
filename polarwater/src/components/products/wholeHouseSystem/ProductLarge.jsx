@@ -33,7 +33,7 @@ function ProductLarge() {
 							<h1 className="text-3xl font-extrabold font-serif uppercase text-gray-800 mb-4">
 								Non-Electric Conditioner
 							</h1>
-							<p className="mt-1 text-gray-800 dark:text-gray-800 max-w-md">
+							<p className="mt-1 text-lg text-gray-800 dark:text-gray-800 max-w-md">
 								This innovative product uses a unique process called TAC
 								(template-assisted crystallization) to condition your water
 								without needing electricity or salt. TAC works by manipulating
@@ -81,7 +81,7 @@ function ProductLarge() {
 								<br />
 								Upflow Filter
 							</h3>
-							<p className="mt-1 text-gray-800 dark:text-gray-800 max-w-md">
+							<p className="mt-1 text-lg text-gray-800 dark:text-gray-800 max-w-md">
 								Penguin Water also offers a full line of upflow filters to
 								address various water treatment needs. Our filters are available
 								in various media, including GAC, catalytic carbon, and calcite,

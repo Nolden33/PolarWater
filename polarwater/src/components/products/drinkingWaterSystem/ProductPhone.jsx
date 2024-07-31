@@ -23,7 +23,7 @@ function ProductPhone() {
                         Reverse Osmosis Systems
                     </h3>
                     <div className="w-3/5 mx-auto my-4 h-1 bg-red-700"></div>
-                    <p className="w-full text-pretty px-6 text-center text-sm font-medium text-gray-800">
+                    <p className="w-full text-lg text-pretty px-6 text-center font-medium text-gray-800">
                         Both systems are designed for easy under-sink installation
                         and offer options for icemaker and auxiliary use points.
                         So, whether you're looking to improve the quality of your
@@ -46,7 +46,7 @@ function ProductPhone() {
                             <h1 className="text-3xl font-bold text-gray-800 dark:text-black mb-4">
                                 5 Stage
                             </h1>
-                            <p className="text-gray-800 dark:text-gray-800 max-w-md mx-auto md:mx-0">
+                            <p className="text-gray-800 text-lg dark:text-gray-800 max-w-md mx-auto md:mx-0">
                                 The 5-Stage Reverse Osmosis System lets you enjoy clean, pure water free from impurities and contaminants.
                             </p>
                         </div>
@@ -69,7 +69,7 @@ function ProductPhone() {
                             <h3 className="text-3xl font-bold text-gray-800 dark:text-black mb-4">
                                 6 Stage
                             </h3>
-                            <p className="text-gray-800 dark:text-gray-800 max-w-md mx-auto md:mx-0">
+                            <p className="text-gray-800 text-lg dark:text-gray-800 max-w-md mx-auto md:mx-0">
                                 The 6-Stage Reverse Osmosis System adds an additional stage of treatment from the 5 stage, providing minerals and hydrating alkalinity for your drinking water.
                             </p>
                         </div>
