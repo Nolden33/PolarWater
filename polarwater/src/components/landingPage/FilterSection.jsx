@@ -1,12 +1,56 @@
 import React, { useState } from "react";
 import ReBg from "../../images/landingPage/filterSection/RihannaNoBg.png";
-import Rere from "../../images/landingPage/filterSection/ReRe.jpg";
-import upflow from "../../images/products/wholeHouse/CarbonmMediaPNG.png";
-import conditioner from "../../images/products/wholeHouse/ConditioningmediaPNG.png";
-import Five from "../../images/products/drinkingWater/FiveStage.png";
-import Six from "../../images/products/drinkingWater/ROPNG.png";
-import tank from "../../images/products/drinkingWater/TankPNG.png";
-import housing from "../../images/products/drinkingWater/FilterhousingPNG.png";
+import upflowImage from "../../images/products/wholeHouse/CarbonmMediaPNG.png";
+import conditionerImage from "../../images/products/wholeHouse/ConditioningmediaPNG.png";
+import fiveImage from "../../images/products/drinkingWater/FiveStage.png";
+import sixImage from "../../images/products/drinkingWater/ROPNG.png";
+import tankImage from "../../images/products/drinkingWater/TankPNG.png";
+import housingImage from "../../images/products/drinkingWater/FilterhousingPNG.png";
+
+const cardData = [
+    {
+        id: 1,
+        title: "Upflow",
+        image: upflowImage,
+        alt: "Upflow",
+        linkText: "../products/wholeHouseSystems"
+    },
+    {
+        id: 2,
+        title: "Conditioner",
+        image: conditionerImage,
+        alt: "Conditioner",
+        linkText: "../products/wholeHouseSystems"
+    },
+    {
+        id: 3,
+        title: "Five",
+        image: fiveImage,
+        alt: "Five",
+        linkText: "../products/drinkingWaterSystems"
+    },
+    {
+        id: 4,
+        title: "Six",
+        image: sixImage,
+        alt: "Six",
+        linkText: "../products/drinkingWaterSystems"
+    },
+    {
+        id: 5,
+        title: "Tank",
+        image: tankImage,
+        alt: "Tank",
+        linkText: "../products/drinkingWaterSystems"
+    },
+    {
+        id: 6,
+        title: "Housing",
+        image: housingImage,
+        alt: "Housing",
+        linkText: "../products/drinkingWaterSystems"
+    },
+];
 
 function FilterSection() {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -42,7 +86,7 @@ function FilterSection() {
                                 <h1 className="text-4xl font-extrabold font-serif uppercase text-gray-800 mb-2">
                                     Transform the way you experience water!
                                 </h1>
-								<div className="w-3/4 md:w-3/5 mx-auto my-4 h-1 bg-red-700"></div>
+                                <div className="w-3/4 md:w-3/5 mx-auto my-4 h-1 bg-red-700"></div>
                                 <p className="text-gray-600 text-lg">
                                     Polar Water offers customized water filtration systems to match your specific requirements, addressing issues like hard water and chlorine taste. Our expert team provides professional installation and ongoing maintenance services to ensure your system operates at peak performance. We prioritize customer satisfaction, guiding you through every step from initial consultation to post-installation support. Experience unmatched quality, reliability, and peace of mind with Polar Water.
                                 </p>
@@ -53,125 +97,26 @@ function FilterSection() {
                     {/* Cards Row */}
                     <div className="hideScroll 2xl:top-1/3 xl:top-1/3 lg:top-2/5 lg:absolute lg:mt-40 xl:mt-60 2xl:mt-80 bottom-0 right-0 lg:left-1/3 z-20 w-full lg:overflow-hidden md:pe-20">
                         <div className="flex overflow-x-auto py-2 -mx-2 lg:w-3/4">
-                            {/* Card 1 */}
-                            <div className="flex-shrink-0 min-w-[300px] bg-gray-200 rounded-lg shadow mx-4">
-                                <div className="p-4">
-                                    <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                                        upflow
-                                    </h3>
+                            {cardData.map(card => (
+                                <div key={card.id} className="flex-shrink-0 min-w-[300px] bg-gray-200 rounded-lg shadow mx-4">
+                                    <div className="p-4">
+                                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                                            {card.title}
+                                        </h3>
+                                    </div>
+                                    <img
+                                        className="h-40 w-full object-contain mt-2 cursor-pointer"
+                                        src={card.image}
+                                        alt={card.alt}
+                                        onClick={() => handleImageClick(card.image)}
+                                    />
+                                    <div className="p-4">
+                                        <a href={card.linkText} className="text-red-700 hover:underline">
+                                            View More...
+                                        </a>
+                                    </div>
                                 </div>
-                                <img
-                                    className="h-40 w-full object-contain mt-2 cursor-pointer"
-                                    src={upflow}
-                                    alt="Card 1"
-                                    onClick={() => handleImageClick(upflow)}
-                                />
-                                <div className="p-4">
-                                    <a href="#" className="text-red-700 hover:underline">
-                                        View more...
-                                    </a>
-                                </div>
-                            </div>
-
-                            {/* Card 2 */}
-                            <div className="min-w-[300px] bg-gray-200 rounded-lg shadow flex-shrink-0 mx-4">
-                                <div className="p-4">
-                                    <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                                        conditioner
-                                    </h3>
-                                </div>
-                                <img
-                                    className="h-40 w-full object-contain mt-2 cursor-pointer"
-                                    src={conditioner}
-                                    alt="Card 2"
-                                    onClick={() => handleImageClick(conditioner)}
-                                />
-                                <div className="p-4">
-                                    <a href="#" className="text-blue-600 hover:underline">
-                                        View more...
-                                    </a>
-                                </div>
-                            </div>
-
-                            {/* Card 3 */}
-                            <div className="min-w-[300px] bg-gray-200 rounded-lg shadow flex-shrink-0 mx-4">
-                                <div className="p-4">
-                                    <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                                        Five
-                                    </h3>
-                                </div>
-                                <img
-                                    className="h-40 w-full object-contain mt-2 cursor-pointer"
-                                    src={Five}
-                                    alt="Card 3"
-                                    onClick={() => handleImageClick(Five)}
-                                />
-                                <div className="p-4">
-                                    <a href="#" className="text-blue-600 hover:underline">
-                                        View more...
-                                    </a>
-                                </div>
-                            </div>
-
-                            {/* Card 4 */}
-                            <div className="min-w-[300px] bg-gray-200 rounded-lg shadow flex-shrink-0 mx-4">
-                                <div className="p-4">
-                                    <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                                        Six
-                                    </h3>
-                                </div>
-                                <img
-                                    className="h-40 w-full object-contain mt-2 cursor-pointer"
-                                    src={Six}
-                                    alt="Card 4"
-                                    onClick={() => handleImageClick(Six)}
-                                />
-                                <div className="p-4">
-                                    <a href="#" className="text-blue-600 hover:underline">
-                                        View more...
-                                    </a>
-                                </div>
-                            </div>
-
-                            {/* Card 5 */}
-                            <div className="min-w-[300px] bg-gray-200 rounded-lg shadow flex-shrink-0 mx-4">
-                                <div className="p-4">
-                                    <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                                        Tank
-                                    </h3>
-                                </div>
-                                <img
-                                    className="h-40 w-full object-contain mt-2 cursor-pointer"
-                                    src={tank}
-                                    alt="Card 5"
-                                    onClick={() => handleImageClick(tank)}
-                                />
-                                <div className="p-4">
-                                    <a href="#" className="text-blue-600 hover:underline">
-                                        View more...
-                                    </a>
-                                </div>
-                            </div>
-
-                            {/* Card 6 */}
-                            <div className="min-w-[300px] bg-gray-200 rounded-lg shadow flex-shrink-0 mx-4">
-                                <div className="p-4">
-                                    <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                                        housing
-                                    </h3>
-                                </div>
-                                <img
-                                    className="h-40 w-full object-contain mt-2 cursor-pointer"
-                                    src={housing}
-                                    alt="Card 6"
-                                    onClick={() => handleImageClick(housing)}
-                                />
-                                <div className="p-4">
-                                    <a href="#" className="text-blue-600 hover:underline">
-                                        View more...
-                                    </a>
-                                </div>
-                            </div>
+                            ))}
                             <div className="hidden lg:flex flex-shrink-0 w-4 mx-10 lg:w-8"></div>
                         </div>
                     </div>

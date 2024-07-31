@@ -56,9 +56,11 @@ function ContamSection() {
                         </div>
                     </div>
                     <div className="flex justify-center md:justify-end">
-                        <button type="button" className="mt-12 mb-4 md:mb-0 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent blueOne text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
-                            Test the Water in Your Area
-                        </button>
+                        <a href="https://www.ewg.org/tapwater/" target="_blank" rel="noopener noreferrer">
+                            <button type="button" className="mt-12 mb-4 md:mb-0 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent blueOne text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+                                Test the Water in Your Area
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
