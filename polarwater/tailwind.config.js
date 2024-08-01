@@ -9,7 +9,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
     './node_modules/preline/preline.js',
   ],
-  darkMode: media, // or 'media' or 'class'
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },
