@@ -60,7 +60,7 @@ function App() {
 					
 						<div className="col">
 							<Routes>
-								<Route path="/" element={<LandingPage />} />
+								<Route path="/home" element={<LandingPage />} />
 								<Route path="/products/wholeHouseSystems" element={<WholeHouse />} />
 								<Route path="/products/drinkingWaterSystems" element={<DrinkingWater />} />
 								<Route path="/contactUs" element={<ContactUs />} />
