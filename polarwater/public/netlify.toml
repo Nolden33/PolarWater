@@ -1,7 +1,7 @@
 [build]
   base    = "polarwater"       # Adjust based on your project structure
   publish = "build"  # Directory where your built files are outputted
-  command = "CI=false npm run build" # Temporarily bypass CI warnings; remove after fixing ESLint issues
+  command = "CI='' npm run build" # Temporarily bypass CI warnings; remove after fixing ESLint issues
 
 [build.environment]
   NODE_VERSION = "16" # Ensure the Node.js version matches your project requirements
