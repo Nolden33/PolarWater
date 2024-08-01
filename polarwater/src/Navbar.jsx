@@ -38,7 +38,7 @@ function Navbar() {
 			<div className="relative flex flex-wrap sm:flex-nowrap z-50 w-full text-sm py-3 blueOne">
 				<nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
 					<div className="flex items-center justify-between w-full sm:w-auto">
-						<a className="flex-none text-2xl font-bold dark:text-white" href="/">
+						<a className="flex-none text-2xl font-bold dark:text-white" href="/home">
 							Polar Water Filtration
 						</a>
 						<div className="sm:hidden">
@@ -86,7 +86,7 @@ function Navbar() {
 					</div>
 					<div id="navbar-with-mega-menu" className={`hs-collapse ${isCollapsed ? "hidden" : ""} overflow transition-all duration-300 basis-full grow sm:flex sm:items-center sm:justify-between`}>
 						<div className="flex flex-col text-xl sm:flex-row gap-5 mt-5 sm:mt-0 sm:flex-1 sm:justify-center">
-							<Link to="/" className={`${linkClass("/")} font-medium`} aria-current={isActive("/") ? "page" : undefined}>
+							<Link to="/home" className={`${linkClass("/home")} font-medium`} aria-current={isActive("/home") ? "page" : undefined}>
 								Home
 							</Link>
 							<div className="hs-dropdown-hover-event [--trigger:hover] [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] flex justify-center w-md-full" ref={dropdownRef} style={{ position: "relative" }}>
