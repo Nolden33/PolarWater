@@ -1,4 +1,7 @@
-[[redirects]]
-from="/*"
-to="/index.html"
-status=200
+[build]
+  base    = "polarwater"       # Base directory, leave it empty for the root
+  publish = "build"  # Directory where the built files are outputted
+  command = "npm run build" # Command to build the project
+
+[build.environment]
+  NODE_VERSION = "16"
