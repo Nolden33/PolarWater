@@ -91,7 +91,7 @@ function ContactUs() {
 				</div>
 				<div className="absolute bottom-48 sm:bottom-52 lg:start-28 md:start-16 p-2">
 					<div className="p-3 text-4xl font-bold text-black">
-						Frequently Asked Questions
+						Contact Us
 					</div>
 				</div>
 			</div>
