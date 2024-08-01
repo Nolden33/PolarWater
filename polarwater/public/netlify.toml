@@ -5,6 +5,3 @@
 
 [build.environment]
   NODE_VERSION = "16" # Ensure the Node.js version matches your project requirements
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs" # Example of using a plugin, adjust based on your project needs
