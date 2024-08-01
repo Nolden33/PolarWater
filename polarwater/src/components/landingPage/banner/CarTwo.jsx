@@ -48,7 +48,7 @@ function CarTwo() {
             </div> */}
           </div>
           <div id="RIGHTSIDE" className="col-span-4 row-span-3 sm:col-span-2 sm:row-span-4 flex flex-col justify-end items-center">
-            <a href="https://www.ewg.org/tapwater/" target="_blank" rel="noopener noreferrer" className="mb-16 sm:mb-24 sm:ms-40">
+            <a href="https://www.ewg.org/tapwater/" target="_blank" rel="noopener noreferrer" className="mb16 sm:mb-48 sm:ms-40">
               <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gradient-to-tl from-blue-600 to-cyan-400 text-white hover:bg-blueOne disabled:opacity-50 disabled:pointer-events-none">
                 Test the Water in Your Area
               </button>
