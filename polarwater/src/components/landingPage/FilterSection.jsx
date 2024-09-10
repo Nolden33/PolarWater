@@ -10,42 +10,42 @@ import housingImage from "../../images/products/drinkingWater/FilterhousingPNG.p
 const cardData = [
     {
         id: 1,
-        title: "Upflow",
+        title: "Carbon Filters",
         image: upflowImage,
         alt: "Upflow",
         linkText: "../products/wholeHouseSystems"
     },
     {
         id: 2,
-        title: "Conditioner",
+        title: "Filtersorb SP3 Conditioner",
         image: conditionerImage,
         alt: "Conditioner",
         linkText: "../products/wholeHouseSystems"
     },
     {
         id: 3,
-        title: "Five",
+        title: "Under Sink System",
         image: fiveImage,
         alt: "Five",
         linkText: "../products/drinkingWaterSystems"
     },
     {
         id: 4,
-        title: "Six",
+        title: "Alkaline Under Sink System",
         image: sixImage,
         alt: "Six",
         linkText: "../products/drinkingWaterSystems"
     },
     {
         id: 5,
-        title: "Tank",
+        title: "RO Tank",
         image: tankImage,
         alt: "Tank",
         linkText: "../products/drinkingWaterSystems"
     },
     {
         id: 6,
-        title: "Housing",
+        title: "20in Filter",
         image: housingImage,
         alt: "Housing",
         linkText: "../products/drinkingWaterSystems"
