@@ -18,7 +18,7 @@ function App() {
 	function ConditionalBanner() {
 		const location = useLocation(); // Now safely within the <Router>
 		
-		if (location.pathname === '/home') {
+		if (location.pathname === '/') {
 		  return <Banner />;
 		}
 		
