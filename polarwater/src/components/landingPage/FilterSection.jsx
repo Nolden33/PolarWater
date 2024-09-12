@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import pete from "../../images/landingPage/polarPete.png";
 import ReBg from "../../images/landingPage/filterSection/RihannaNoBg.png";
 import upflowImage from "../../images/products/wholeHouse/CarbonmMediaPNG.png";
 import conditionerImage from "../../images/products/wholeHouse/ConditioningmediaPNG.png";
@@ -74,7 +75,7 @@ function FilterSection() {
                         <div className="lg:w-1/2">
                             <img
                                 className="w-full h-auto object-cover"
-                                src={ReBg}
+                                src={pete}
                                 alt="Image Description"
                                 style={{ minWidth: "50%" }}
                             />
