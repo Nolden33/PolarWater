@@ -117,12 +117,12 @@ function Navbar() {
 							</Link>
 						</div>
 						<div className="hidden sm:flex sm:flex-col text-gray-300 sm:ml-auto sm:flex-none sm:items-end">
-							<span>Phone: (123) 456-7890</span>
-							<span>Email: info@polarwater.com</span>
+							<span>Phone: (951) 212-5633</span>
+							<span>Email: Polarwaterllc@gmail.com</span>
 						</div>
 					<div className="flex sm:hidden flex-col text-gray-300 mt-5">
-						<span>Phone: (123) 456-7890</span>
-						<span>Email: info@polarwater.com</span>
+						<span>Phone: (951) 212-5633</span>
+						<span>Email: Polarwaterllc@gmail.com</span>
 					</div>
 					</div>
 				</nav>
