@@ -1,67 +1,57 @@
-import React, { useState } from "react";
+import React from "react";
+import pete from "./images/landingPage/polarPeteDrinksHalf.png";
 
-function Navbar() {
-  // State to track if the navbar is open or closed
-  const [isOpen, setIsOpen] = useState(false);
-
-  // Function to toggle the navbar open/close
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
-
-  // Function to close the navbar when a link is clicked
-  const closeNavbar = () => {
-    setIsOpen(false);
-  };
-
+function Footer() {
   return (
-    <nav className="bg-blue-500 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-white text-2xl font-bold">
-          Polar Water Filtration
+    <React.Fragment>	
+      <footer className="blueOne text-white py-8">
+        <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
+          {/* Column 1: Logo */}
+          <div className="flex mb-4 md:mb-0 justify-end items-center space-x-4 ps-4">
+            <div className="flex-none text-2xl font-bold">
+              Polar Water Filtration
+            </div>
+            <img
+              className="h-20 object-contain"
+              src={pete}
+              alt="Image Description"
+            />
+          </div>
+
+          {/* Column 2: Contact Information */}
+          <div className="flex flex-col items-center mb-4 md:mb-0">
+            <a href="tel:+19512125633" className="text-white text-lg py-2">
+              <i className="fas fa-phone mr-2"></i> +1 (951) 212-5633
+            </a>
+            <a
+              href="mailto:Polarwaterllc@gmail.com"
+              className="text-white text-lg py-2"
+            >
+              <i className="fas fa-envelope mr-2"></i> Polarwaterllc@gmail.com
+            </a>
+          </div>
+
+          {/* Column 3: Social Media Links */}
+          <div className="flex flex-col items-center mb-4 md:mb-0 pt-4">
+            <h5 className="font-bold text-lg mb-2">Follow Us</h5>
+            <a
+              href="https://www.instagram.com/polarwaterllc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              Instagram: @polarwaterllc
+            </a>
+          </div>
         </div>
 
-        {/* Hamburger Menu for Small Screens */}
-        <button
-          className="text-white block md:hidden"
-          onClick={toggleNavbar}
-        >
-          <i className="fas fa-bars"></i>
-        </button>
-
-        {/* Navbar Links (collapsible) */}
-        <div
-          className={`${
-            isOpen ? "block" : "hidden"
-          } md:flex md:items-center w-full md:w-auto`}
-        >
-          <ul className="md:flex md:space-x-4 text-white">
-            <li className="py-2 md:py-0">
-              <a href="#home" onClick={closeNavbar} className="block md:inline">
-                Home
-              </a>
-            </li>
-            <li className="py-2 md:py-0">
-              <a href="#about" onClick={closeNavbar} className="block md:inline">
-                About Us
-              </a>
-            </li>
-            <li className="py-2 md:py-0">
-              <a href="#services" onClick={closeNavbar} className="block md:inline">
-                Services
-              </a>
-            </li>
-            <li className="py-2 md:py-0">
-              <a href="#contact" onClick={closeNavbar} className="block md:inline">
-                Contact
-              </a>
-            </li>
-          </ul>
+        {/* Footer Bottom */}
+        <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-400">
+          © {new Date().getFullYear()} Polar Water LLC. All rights reserved.
         </div>
-      </div>
-    </nav>
+      </footer>
+    </React.Fragment>
   );
 }
 
-export default Navbar;
+export default Footer;
