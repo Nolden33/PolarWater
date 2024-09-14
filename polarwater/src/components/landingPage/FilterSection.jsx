@@ -68,13 +68,13 @@ function FilterSection() {
 
     return (
         <React.Fragment>
-            <div className="container mx-auto p-4">
-                <div className="overflow-visible w-full h-full mb-8">
+            <div className="container mx-auto p-4 py-16">
+                <div className="overflow-visible w-full h-full">
                     <div className="flex flex-col lg:flex-row">
                         {/* Image Section */}
                         <div className="lg:w-1/2">
                             <img
-                                className="w-full h-auto object-cover"
+                                className="w-full h-auto object-cover lg:pb-40 2xl:pb-28"
                                 src={pete}
                                 alt="Image Description"
                                 style={{ minWidth: "50%" }}
@@ -82,8 +82,8 @@ function FilterSection() {
                         </div>
 
                         {/* Content Section */}
-                        <div className="lg:w-1/2 mt-8 h-full lg:absolute lg:top-1/4 lg:top-64 xl:top-60 2xl:top-96 lg:left-3/4 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:flex lg:flex-col lg:items-center lg:justify-center lg:px-8 lg:pt-8">
-                            <div className="mb-4 xl:px-20 space-y-8">
+                        <div className="lg:w-1/2 mt-8 h-full lg:absolute lg:top-1/4 lg:top-60 xl:top-60 2xl:top-60 lg:left-2/3 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:flex lg:flex-col lg:items-center lg:justify-center lg:px-4 xl:px-8 lg:pt-8">
+                            <div className="mb-4 space-y-8">
                                 <h1 className="text-4xl font-extrabold font-serif uppercase text-gray-800 mb-2">
                                     Transform the way you experience water!
                                 </h1>
@@ -96,10 +96,10 @@ function FilterSection() {
                     </div>
 
                     {/* Cards Row */}
-                    <div className="hideScroll 2xl:top-1/3 xl:top-1/3 lg:top-2/5 lg:absolute lg:mt-40 xl:mt-60 2xl:mt-80 bottom-0 right-0 lg:left-1/3 z-20 w-full lg:overflow-hidden md:pe-20">
+                    <div className="hideScroll 2xl:top-1/3 xl:top-1/3 lg:top-1/3 lg:absolute lg:mt-56 xl:mt-48 bottom-0 right-0 lg:left-1/3 z-20 w-full lg:overflow-hidden md:pe-20">
                         <div className="flex overflow-x-auto py-2 -mx-2 lg:w-3/4">
                             {cardData.map(card => (
-                                <div key={card.id} className="flex-shrink-0 min-w-[300px] bg-gray-200 rounded-lg shadow mx-4">
+                                <div key={card.id} className="flex-shrink-0 min-w-[300px] max-w-[300px] bg-gray-200 rounded-lg shadow mx-4">
                                     <div className="p-4">
                                         <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                                             {card.title}
