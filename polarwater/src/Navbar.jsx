@@ -116,14 +116,32 @@ function Navbar() {
 								Contact Us
 							</Link>
 						</div>
-						<div className="hidden sm:flex sm:flex-col text-gray-300 sm:ml-auto sm:flex-none sm:items-end">
-							<span>Phone: (951) 212-5633</span>
-							<span>Email: Polarwaterllc@gmail.com</span>
+						<div className="hidden sm:flex sm:flex-col text-gray-300 sm:ml-auto sm:flex-none sm:items-start">
+							<a href="tel:+19512125633" className="text-white text-lg">
+								<i className="fas fa-phone mr-2"></i>
+								+1 (951) 212-5633
+							</a>
+							<a
+								href="mailto:Polarwaterllc@gmail.com"
+								className="text-white text-lg"
+							>
+								<i className="fas fa-envelope mr-2"></i>
+								Polarwaterllc@gmail.com
+							</a>
 						</div>
-					<div className="flex sm:hidden flex-col text-gray-300 mt-5">
-						<span>Phone: (951) 212-5633</span>
-						<span>Email: Polarwaterllc@gmail.com</span>
-					</div>
+						<div className="flex sm:hidden flex-col text-gray-300 mt-5">
+							<a href="tel:+19512125633" className="text-white text-lg">
+								<i className="fas fa-phone mr-2"></i>
+								+1 (951) 212-5633
+							</a>
+							<a
+								href="mailto:Polarwaterllc@gmail.com"
+								className="text-white text-lg"
+							>
+								<i className="fas fa-envelope mr-2"></i>
+								Polarwaterllc@gmail.com
+							</a>
+						</div>
 					</div>
 				</nav>
 			</div>

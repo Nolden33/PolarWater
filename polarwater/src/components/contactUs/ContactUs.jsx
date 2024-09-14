@@ -73,8 +73,19 @@ function ContactUs() {
 		{
 			id: 5,
 			title: "Social Medias",
-			content:
-				"This is the first item's accordion body. It is hidden by default...",
+			content: (
+			<div className="text-lg text-left">
+				Instagram: 
+					<a 
+					href="https://www.instagram.com/polarwaterllc/" 
+					target="_blank" 
+					rel="noopener noreferrer"
+					className="text-blue-500 hover:underline ml-2"
+					>
+						@polarwaterllc
+					</a>
+			</div>
+			),
 		},
 	];
 
