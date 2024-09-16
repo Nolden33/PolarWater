@@ -31,8 +31,11 @@ function AccordionTwo() {
         console.log(customerInfo);
         try {
             // Send POST request to the Netlify function
-            await axios.post("https://polarwaterllc.com/.netlify/functions/Sendemail", customerInfo);
-            alert("Email sent successfully!");
+            await axios.post("https://polarwaterllc.com/.netlify/functions/Sendemail", customerInfo, {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });alert("Email sent successfully!");
         } catch (error) {
             console.error("There was an error sending the email!", error);
             alert("Failed to send email.");
