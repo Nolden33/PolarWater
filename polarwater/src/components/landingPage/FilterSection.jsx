@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import pete from "../../images/landingPage/polarPete.png";
-import ReBg from "../../images/landingPage/filterSection/RihannaNoBg.png";
 import upflowImage from "../../images/products/wholeHouse/CarbonmMediaPNG.png";
 import conditionerImage from "../../images/products/wholeHouse/ConditioningmediaPNG.png";
 import fiveImage from "../../images/products/drinkingWater/FiveStage.png";
