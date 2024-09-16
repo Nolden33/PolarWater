@@ -4,7 +4,7 @@ function AccordionOne() {
     return (
         <div className="px-4">
             <p className="text-left text-lg mb-4"> {/* Increased bottom margin for better visual separation */}
-                The best way to contact Polar Water is by Phone Consultation. However, we welcome phone calls and emails as well.
+                The best way to contact Polar Water is by Phone Consultation. However, we welcome texts and emails as well.
             </p>
             <ul className="text-left list-none space-y-2"> {/* Added space between list items */}
                 <li className="">
