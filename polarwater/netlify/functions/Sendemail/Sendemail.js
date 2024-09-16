@@ -17,7 +17,7 @@ exports.handler = async function (event, context) {
             service: 'gmail',
             auth: {
                 user: 'polarwaterllc@gmail.com', // Replace with your Gmail email
-                pass: 'Zaman786!',  // Replace with your Gmail password or App-specific password
+                pass: 'ctjo gmxk msca mwap',  // Replace with your Gmail password or App-specific password
             },
         });
 
