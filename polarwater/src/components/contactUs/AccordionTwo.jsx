@@ -31,7 +31,7 @@ function AccordionTwo() {
         console.log(customerInfo);
         try {
             // Send POST request to the Netlify function
-            await axios.post("/.netlify/functions/sendEmail", customerInfo);
+            await axios.post("/netlify/functions", customerInfo);
             alert("Email sent successfully!");
         } catch (error) {
             console.error("There was an error sending the email!", error);
