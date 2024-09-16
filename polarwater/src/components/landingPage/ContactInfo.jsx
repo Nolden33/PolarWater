@@ -49,7 +49,7 @@ function ContactInfo() {
                             </div>
                         </div>
                         <div id="div2" className="lg:w-1/2 flex justify-center items-center p-4 mt-4 sm:mt-0">
-                            <img src={Map} alt="Map of the Inland Empire" className="sm:w-100 lg:w-3/4 h-auto rounded-lg shadow-lg" />
+                            <img src={Map} alt="Map of the Inland Empire" className="sm:w-100 lg:w-3/4 h-auto rounded-lg" />
                         </div>
                     </div>
                 </div>
