@@ -2,6 +2,7 @@
   base    = "polarwater"       # Adjust based on your project structure
   publish = "build"  # Directory where your built files are outputted
   command = "CI='' npm run build" # Temporarily bypass CI warnings; remove after fixing ESLint issues
+  functions = "netlify/functions" 
 
 [build.environment]
   NODE_VERSION = "16" # Ensure the Node.js version matches your project requirements
