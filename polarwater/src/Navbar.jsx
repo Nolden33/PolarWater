@@ -8,12 +8,20 @@ function Navbar() {
 	const closeDropdown = () => setIsDropdownOpen(false);
 	const toggleNavbar = () => setIsCollapsed(!isCollapsed);
 	const dropdownRef = useRef(null);
+	const navbarRef = useRef(null); // New reference for the entire navbar
 	const location = useLocation();
 
 	useEffect(() => {
 		function handleClickOutside(event) {
-			if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-				closeDropdown();
+			// Check if the click is outside the navbar
+			if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+				// Collapse the navbar and close dropdown if they are open
+				if (!isCollapsed) {
+					setIsCollapsed(true);
+				}
+				if (isDropdownOpen) {
+					closeDropdown();
+				}
 			}
 		}
 
@@ -21,7 +29,7 @@ function Navbar() {
 		return () => {
 			document.removeEventListener("mousedown", handleClickOutside);
 		};
-	}, [dropdownRef]);
+	}, [isCollapsed, isDropdownOpen]);
 
 	const isActive = (path) => {
 		return location.pathname === path || location.pathname.includes(path);
@@ -33,9 +41,16 @@ function Navbar() {
 			: "text-gray-300 hover:text-white";
 	};
 
+	// Automatically close the navbar after an option is selected on small screens
+	const handleNavItemClick = () => {
+		if (!isCollapsed) {
+			toggleNavbar();
+		}
+	};
+
 	return (
 		<React.Fragment>
-			<div className="relative flex flex-wrap sm:flex-nowrap z-50 w-full text-sm py-3 blueOne">
+			<div ref={navbarRef} className="relative flex flex-wrap sm:flex-nowrap z-50 w-full text-sm py-3 blueOne">
 				<nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
 					<div className="flex items-center justify-between w-full sm:w-auto">
 						<a className="flex-none text-2xl font-bold dark:text-white" href="/">
@@ -86,7 +101,7 @@ function Navbar() {
 					</div>
 					<div id="navbar-with-mega-menu" className={`hs-collapse ${isCollapsed ? "hidden" : ""} overflow transition-all duration-300 basis-full grow sm:flex sm:items-center sm:justify-between`}>
 						<div className="flex flex-col text-xl sm:flex-row gap-5 mt-5 sm:mt-0 sm:flex-1 sm:justify-center">
-							<Link to="/" className={`${linkClass("/")} font-medium`} aria-current={isActive("/") ? "page" : undefined}>
+							<Link to="/" className={`${linkClass("/")} font-medium`} aria-current={isActive("/") ? "page" : undefined} onClick={handleNavItemClick}>
 								Home
 							</Link>
 							<div className="hs-dropdown-hover-event [--trigger:hover] [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] flex justify-center w-md-full" ref={dropdownRef} style={{ position: "relative" }}>
@@ -98,7 +113,10 @@ function Navbar() {
 										to="/products/wholeHouseSystems"
 										className={`${linkClass("/products/wholeHouseSystems")} block py-2 px-3 rounded-lg text-sm hover:text-white`}
 										aria-current={isActive("/products/wholeHouseSystems") ? "page" : undefined}
-										onClick={closeDropdown}
+										onClick={() => {
+											handleNavItemClick();
+											closeDropdown();
+										}}
 									>
 										Whole House System
 									</Link>
@@ -106,13 +124,16 @@ function Navbar() {
 										to="/products/drinkingWaterSystems"
 										className={`${linkClass("/products/drinkingWaterSystems")} block py-2 px-3 rounded-lg text-sm hover:text-white`}
 										aria-current={isActive("/products/drinkingWaterSystems") ? "page" : undefined}
-										onClick={closeDropdown}
+										onClick={() => {
+											handleNavItemClick();
+											closeDropdown();
+										}}
 									>
 										Drinking Water System
 									</Link>
 								</div>
 							</div>
-							<Link to="/contactUs" className={`${linkClass("/contactUs")} font-medium`} aria-current={isActive("/contactUs") ? "page" : undefined}>
+							<Link to="/contactUs" className={`${linkClass("/contactUs")} font-medium`} aria-current={isActive("/contactUs") ? "page" : undefined} onClick={handleNavItemClick}>
 								Contact Us
 							</Link>
 						</div>
@@ -121,10 +142,7 @@ function Navbar() {
 								<i className="fas fa-phone mr-2"></i>
 								+1 (951) 212-5633
 							</a>
-							<a
-								href="mailto:Polarwaterllc@gmail.com"
-								className="text-white text-lg"
-							>
+							<a href="mailto:Polarwaterllc@gmail.com" className="text-white text-lg">
 								<i className="fas fa-envelope mr-2"></i>
 								Polarwaterllc@gmail.com
 							</a>
@@ -134,10 +152,7 @@ function Navbar() {
 								<i className="fas fa-phone mr-2"></i>
 								+1 (951) 212-5633
 							</a>
-							<a
-								href="mailto:Polarwaterllc@gmail.com"
-								className="text-white text-lg"
-							>
+							<a href="mailto:Polarwaterllc@gmail.com" className="text-white text-lg">
 								<i className="fas fa-envelope mr-2"></i>
 								Polarwaterllc@gmail.com
 							</a>
