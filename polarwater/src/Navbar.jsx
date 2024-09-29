@@ -53,7 +53,7 @@ function Navbar() {
 			<div ref={navbarRef} className="relative flex flex-wrap sm:flex-nowrap z-50 w-full text-sm py-3 blueOne">
 				<nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
 					<div className="flex items-center justify-between w-full sm:w-auto">
-						<a className="flex-none text-2xl font-bold dark:text-white" href="/">
+						<a className="flex-none text-2xl font-bold text-white" href="/">
 							Polar Water Filtration
 						</a>
 						<div className="sm:hidden">
