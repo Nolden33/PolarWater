@@ -28,7 +28,7 @@ function ContactUs() {
 			content: (
 				<div className="text-lg text-left">
 					<p>Mon - Fri: 8am to 7pm</p>
-					<p>Sat & Sun: Closed</p>
+					<p>Sat & Sun: 9am to 5pm</p>
 				</div>
 			),
 		},
