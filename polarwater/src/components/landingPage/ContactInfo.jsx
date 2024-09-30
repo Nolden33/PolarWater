@@ -21,7 +21,7 @@ function ContactInfo() {
                                 </p>
                                 <div className="text-md text-gray-600 mb-4">
                                     <p>Mon - Fri: 8am to 7pm</p>
-                                    <p>Sat & Sun: Closed</p>
+                                    <p>Sat & Sun: 9am to 5pm</p>
                                 </div>
                                 <p className="text-xl font-semibold text-gray-800 mb-4">
                                     Service Areas Include:
