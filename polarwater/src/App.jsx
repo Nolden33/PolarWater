@@ -9,6 +9,7 @@ import ContactUs from "./components/contactUs/ContactUs";
 import Banner from "./components/landingPage/banner/Banner";
 import NavBar from "./Navbar";
 import Footer from "./Footer";
+import ScrollToTop from "./components/ScrollToTop"
 import "preline/preline";
 
 
@@ -47,6 +48,7 @@ function App() {
 		<PrimeReactProvider>
 			<div className="App">
 			<Router>
+				<ScrollToTop />
 				<header>
 					<ConditionalBanner />
 					<div
