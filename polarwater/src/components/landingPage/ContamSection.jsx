@@ -55,6 +55,42 @@ function ContamSection() {
                             <div className="hidden lg:flex flex-shrink-0 w-4 mx-10 lg:w-8"></div>
                         </div>
                     </div>
+                    {/* Arrows for Horizontal Sliding Cards */}
+						<div className="flex lg:left-1/3 items-center justify-center md:me-0 w-3/4 md:w-3/5 mx-auto my-4">
+							<div className="mr-4">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									className="h-6 w-6 text-red-700"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth={2}
+										d="M15 19l-7-7 7-7"
+									/>
+								</svg>
+							</div>
+							<div className="flex-grow h-1 bg-red-700"></div>
+							<div className="ml-4">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									className="h-6 w-6 text-red-700"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth={2}
+										d="M9 5l7 7-7 7"
+									/>
+								</svg>
+							</div>
+						</div>
                     <div className="flex justify-center md:justify-end">
                         <a href="https://www.ewg.org/tapwater/" target="_blank" rel="noopener noreferrer">
                             <button type="button" className="mt-12 mb-4 md:mb-0 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent blueOne text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">

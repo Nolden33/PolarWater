@@ -134,6 +134,8 @@ function FilterSection() {
 							))}
 							<div className="hidden lg:flex flex-shrink-0 w-4 mx-10 lg:w-8"></div>
 						</div>
+                        
+                        {/* Arrows for Horizontal Sliding Cards */}
 						<div className="flex items-center justify-center md:ms-64 w-3/4 md:w-2/5 mx-auto my-4">
 							<div className="mr-4">
 								<svg
