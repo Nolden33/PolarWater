@@ -23,6 +23,59 @@ function ContactUs() {
 			content: <Acc2 />,
 		},
 		{
+			id: 6,
+			title: "Discounts",
+			content: (
+				<div className="text-lg text-left">
+					<div>Polar Water is proud to offer discounts to the following:</div>
+						<ul class="list-none md:list-disc list-inside mt-4">
+							<li>
+								First Responders
+							</li>
+							<li>
+								Active Military and Veterans
+							</li>
+							<li>
+								Healthcare Professionals 
+							</li>
+							<li>
+								Teachers
+							</li>
+							<li>
+								55+ 
+							</li>
+						</ul>
+					<div className="mt-4">Contact us for details.</div>
+				</div>
+			),
+		},
+		{
+			id: 7,
+			title: "Referral Program",
+			content: (
+				<div className="text-2xl text-left font-bold">
+					Earn $100 for You & $100 for Them!
+					<div className="text-xl text-left font-normal mt-4">
+						How It Works: Refer a friend or family member to Polar Water, and when they make a purchase, both of you receive $100.How It Works: Refer a friend or family member to Polar Water, and when they make a purchase, both of you receive $100.
+					</div>
+					<ul class="list-none md:list-disc list-inside text-lg text-left font-normal mt-4">
+						<li>
+						Once the new customer completes a purchase, both you and the new customer will receive $100 each via Visa prepaid card.
+						</li>
+						<li>
+						Fill out the form on our website or let your Polar Water representative know to complete it. You will need the original customer’s name, phone number, and address for both the referrer and the referred party.
+						</li>
+						<li>
+						No Limits: The more referrals you make, the more you earn!
+						</li>
+						<li>
+						Fast Payouts: Visa cards will be mailed within 7 to 10 business days after the purchase is completed.
+						</li>
+					</ul>
+				</div>
+			),
+		},
+		{
 			id: 3,
 			title: "Operating Hours",
 			content: (
@@ -39,25 +92,12 @@ function ContactUs() {
 				<div className="flex flex-col md:grid md:grid-rows-1 md:grid-cols-6 place-items-center">
 					<div className="md:row-span-1 md:col-span-3 bg-white flex flex-col">
 						{/* Grid for service areas */}
-						<div className="grid grid-cols-3 grid-rows-5 text-md text-gray-600 place-items-center">
-							<p>Banning</p>
-							<p>Moreno Valley</p>
-							<p>Riverside</p>
-							<p>Chino</p>
-							<p>Norco</p>
-							<p>San Bernardino</p>
-							<p>Colton</p>
-							<p>Ontario</p>
-							<p>Twentynine Palms</p>
-							<p>Corona</p>
-							<p>Perris</p>
-							<p>Yucca Valley</p>
-							<p>Fontana</p>
-							<p>Rialto</p>
-							<p>Rancho Cucamonga</p>
-						</div>
-						<div className="text-md text-gray-600 place-items-center">
-							***Restrictions Apply***
+						<div className="grid grid-cols-1 grid-rows-4 text-xl text-gray-600">
+							<p>Riverside County</p>
+							<p>and</p>
+							<p>San Bernardino County</p>
+							<br></br>
+							<p>***Restrictions Apply***</p>
 						</div>
 					</div>
 
@@ -144,19 +184,18 @@ function ContactUs() {
 									</svg>
 								</button>
 								<div
-  className={`${
-    activeId === id ? "block" : "hidden"
-  } transition-all duration-500 ease-in-out`}
->
-  <div className="p-5">
-    {typeof content === "string" ? (
-      <p className="text-gray-800">{content}</p>
-    ) : (
-      content
-    )}
-  </div>
-</div>
-
+									className={`${
+										activeId === id ? "block" : "hidden"
+									} transition-all duration-500 ease-in-out`}
+								>
+									<div className="p-5">
+										{typeof content === "string" ? (
+											<p className="text-gray-800">{content}</p>
+										) : (
+											content
+										)}
+									</div>
+								</div>
 							</div>
 						))}
 					</div>
