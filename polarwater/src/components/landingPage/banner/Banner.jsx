@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import CarOne from "./CarOne";
 import CarTwo from "./CarTwo";
+import CarThree from "./CarThree";
 
 function Banner() {
     const [activeSlide, setActiveSlide] = useState(0);
-    const totalSlides = 2; // Assuming you have 3 slides
+    const totalSlides = 3;
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -13,9 +14,7 @@ function Banner() {
         return () => clearInterval(interval);
     }, [totalSlides]);
 
-    // Explicitly handle slide changes
     const changeSlide = (slideIndex) => {
-        console.log(`Changing to slide ${slideIndex}`);
         setActiveSlide(slideIndex);
     };
 
@@ -27,26 +26,24 @@ function Banner() {
         changeSlide((activeSlide - 1 + totalSlides) % totalSlides);
     };
 
-    // Adjust the translateX dynamically based on the active slide index
     const slideStyles = {
         transform: `translateX(-${activeSlide * 100}%)`,
     };
 
     return (
         <React.Fragment>
-            <div className="relative">
-                <div className="overflow-hidden w-full min-h-[350px] bg-white shadow-lg">
-                    <div className="flex transition-transform duration-700  " style={slideStyles}>
-                        <div className="min-w-full">
+            <div className="relative" style={{ height: 'calc(100vh - 3rem)' }}>
+                <div className="overflow-hidden w-full h-full bg-white shadow-lg">
+                    <div className="flex transition-transform duration-700 w-full h-full" style={slideStyles}>
+                        {/* Each Slide Component */}
+                        <div className="min-w-full h-full flex items-center justify-center">
                             <CarOne />
                         </div>
-                        <div className="min-w-full">
-                            <CarTwo />
+                        <div className="min-w-full h-full flex items-center justify-center">
+                            <CarThree />
                         </div>
-                        <div className="min-w-full hidden">
-                            <div className="flex justify-center h-full bg-gray-300 p-6">
-                                <span className="self-center text-4xl">Third slide</span>
-                            </div>
+                        <div className="min-w-full h-full flex items-center justify-center">
+                            <CarTwo />
                         </div>
                     </div>
                 </div>
@@ -56,7 +53,7 @@ function Banner() {
                 <button onClick={nextSlide} type="button" className="absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/[.1]">
                     {/* SVG for Next */}
                 </button>
-                <div className="flex justify-center absolute bottom-3 start-0 end-0 space-x-2">
+                <div className="flex justify-center absolute start-0 end-0 space-x-2" style={{ bottom: '3rem' }}>
                     {[...Array(totalSlides).keys()].map((index) => (
                         <button key={index} onClick={() => changeSlide(index)} className={`w-4 h-4 md:w-6 md:h-6 rounded-full ${activeSlide === index ? 'bg-blue-700' : 'bg-gray-400'}`} aria-label={`Go to slide ${index + 1}`}>
                             {/* Button visual placeholder */}
@@ -69,5 +66,3 @@ function Banner() {
 }
 
 export default Banner;
-
-

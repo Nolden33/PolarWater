@@ -12,70 +12,69 @@ import Footer from "./Footer";
 import ScrollToTop from "./components/ScrollToTop"
 import "preline/preline";
 
-
 function App() {
-	const [isSticky, setIsSticky] = useState(false);
-	
-	function ConditionalBanner() {
-		const location = useLocation(); // Now safely within the <Router>
-		
-		if (location.pathname === '/') {
-		  return <Banner />;
-		}
-		
-		return null;
-	}
-  
-	useEffect(() => {
-	  const handleScroll = () => {
-		const banner = document.querySelector('header');
-		const navbar = document.getElementById('NAVBAR');
-		// Calculate the distance from the banner's top to the top of the document
-		const bannerTopToDocumentTop = banner.offsetTop;
-		// Determine when the top of the navbar reaches the top of the viewport
-		const sticky = window.scrollY >= bannerTopToDocumentTop + banner.offsetHeight - navbar.offsetHeight;
-		setIsSticky(sticky);
-	  };
-  
-	  window.addEventListener('scroll', handleScroll);
-  
-	  return () => {
-		window.removeEventListener('scroll', handleScroll);
-	  };
-	}, []);
-  
-	return (
-		<PrimeReactProvider>
-			<div className="App">
-			<Router>
-				<ScrollToTop />
-				<header>
-					<ConditionalBanner />
-					<div
-						id="NAVBAR"
-						className={`flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm ${isSticky ? 'fixed top-0 left-0 right-0' : ''}`}
-					>
-						<NavBar />
-					</div>
-				</header>
-				<div className="app-bg mx-auto" style={{ paddingTop: isSticky ? '3rem' : '0' }}>
-					
-						<div className="col">
-							<Routes>
-								<Route path="/" element={<LandingPage />} />
-								<Route path="/products/wholeHouseSystems" element={<WholeHouse />} />
-								<Route path="/products/drinkingWaterSystems" element={<DrinkingWater />} />
-								<Route path="/contactUs" element={<ContactUs />} />
-							</Routes>
-						</div>
-				</div>
-				<footer className="App blueOne">
-					<Footer />
-				</footer>
-			</Router>
-			</div>
-		</PrimeReactProvider>
-	);
+    const [isSticky, setIsSticky] = useState(false);
+
+    function ConditionalBanner() {
+        const location = useLocation(); // Now safely within the <Router>
+
+        if (location.pathname === '/') {
+            return <Banner />;
+        }
+
+        return null;
+    }
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const banner = document.querySelector('header');
+            const navbar = document.getElementById('NAVBAR');
+            if (banner && navbar) {
+                const sticky = window.scrollY >= banner.offsetHeight - navbar.offsetHeight;
+                setIsSticky(sticky);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    return (
+        <PrimeReactProvider>
+            <div className="App">
+                <Router>
+                    <ScrollToTop />
+                    <header>
+                        <ConditionalBanner />
+                        <div
+                            id="NAVBAR"
+                            className={`flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm transition-all duration-500 ${
+                                isSticky ? 'fixed top-0 left-0 right-0' : 'absolute bottom-0'
+                            }`}
+                        >
+                            <NavBar />
+                        </div>
+                    </header>
+                    <div className="app-bg mx-auto" style={{ paddingTop: isSticky ? '3rem' : '0' }}>
+                        <div className="col">
+                            <Routes>
+                                <Route path="/" element={<LandingPage />} />
+                                <Route path="/products/wholeHouseSystems" element={<WholeHouse />} />
+                                <Route path="/products/drinkingWaterSystems" element={<DrinkingWater />} />
+                                <Route path="/contactUs" element={<ContactUs />} />
+                            </Routes>
+                        </div>
+                    </div>
+                    <footer className="App blueOne">
+                        <Footer />
+                    </footer>
+                </Router>
+            </div>
+        </PrimeReactProvider>
+    );
 }
 
 export default App;

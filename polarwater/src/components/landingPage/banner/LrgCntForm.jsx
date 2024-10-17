@@ -7,13 +7,13 @@ function LrgCntForm() {
             <div className="row-start-4 col-span-12 row-span-2 flex flex-col justify-end">
                 <div className="lg:mb-20 xl:mb-32 2xl:mb-52 w-full">
                     <Link
-                        to="/contactUs"
+                        to="/contactUs?accordionId=1"
                         className="block uppercase underline decoration-red-700 tracking-wide blueTextOne md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black mb-2 text-left tracking-widest ps-8 mb-4"
                     >
                         Contact Us
                     </Link>
                     <Link
-                        to="/contactUs"
+                        to="/contactUs?accordionId=2"
                         className="block uppercase underline decoration-red-700 tracking-wide blueTextOne md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-black mb-2 text-left tracking-widest ps-8 mb-4"
                     >
                         Schedule a Phone Consultation

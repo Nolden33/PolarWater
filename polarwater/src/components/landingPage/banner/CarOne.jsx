@@ -18,7 +18,6 @@ function CarOne() {
             setCurrentImage(window.innerWidth < 640 ? FamilySmall : Family);
             setShowBreak(window.innerWidth >= 640);
 
-            // Conditionally display SmCntForm for widths between 768px and 1150px
             if (window.innerWidth >= 768 && window.innerWidth < 1150) {
                 setFormComponent(<MdCntForm />);
             } else if (window.innerWidth > 1150) {
@@ -29,43 +28,39 @@ function CarOne() {
         };
 
         window.addEventListener("resize", handleResize);
-        handleResize(); // Initialize on component mount
+        handleResize();
 
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-	return (
-		<React.Fragment>
-			<div className="group block overflow-hidden dark:focus:outline-none relative">
-				{/* Image */}
-				<img
-					className="size-full object-cover"
-					src={currentImage}
-					alt="Family using fresh and clean water."
-				/>
+    return (
+        <div className="group block overflow-hidden dark:focus:outline-none relative w-full h-full flex items-center justify-center">
+            {/* Image */}
+            <img
+                className="w-full h-full object-top object-cover"
+                src={currentImage}
+                alt="Family using fresh and clean water."
+            />
 
-				{/* Text Overlay */}
-				<div className="absolute inset-0 p-2 grid grid-cols-12 grid-rows-4">
+            {/* Text Overlay */}
+            <div className="absolute inset-0 p-2 grid grid-cols-12 grid-rows-4">
+                {/* Company Name */}
+                <div className="col-span-12 row-span-1 sm:col-span-3 sm:row-span-2 flex justify-center lg:justify-end items-center">
+                    <div className="lg:pe-12 xl:pe-16 2xl:pe-20">
+                        <h1 className="text-gray-200 text-6xl md:text-5xl lg:text-7xl xl:text-8xl font-bold">
+                            Polar {showBreak && <br />}
+                            <span className="bg-clip-text text-transparent bg-gradient-to-tl from-blue-600 to-cyan-400">
+                                Water
+                            </span>
+                        </h1>
+                    </div>
+                </div>
 
-					{/* Company Name */}
-					<div className="col-start-0 col-span-12 row-span-1 sm:col-span-3 sm:row-span-2  flex justify-center lg:justify-end items-center">
-						<div className="lg:pe-12 xl:pe-16 2xl:pe-20">
-							<h1 className="text-gray-200 text-6xl md:text-5xl lg:text-7xl xl:text-8xl  font-bold">
-								Polar {""}
-								{showBreak && <br />}
-								<span className="bg-clip-text text-transparent bg-gradient-to-tl from-blue-600 to-cyan-400">
-									Water
-								</span>
-							</h1>
-						</div>
-					</div>
-
-					{/* Contact Info Form */}
-					{FormComponent}
-				</div>
-			</div>
-		</React.Fragment>
-	);
+                {/* Contact Info Form */}
+                {FormComponent}
+            </div>
+        </div>
+    );
 }
 
 export default CarOne;
