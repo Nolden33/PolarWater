@@ -42,6 +42,14 @@ function Footer() {
             >
               Instagram: @polarwaterllc
             </a>
+            <a
+							href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61566791477918%26mibextid%3DLQQJ4d&data=05%7C02%7C%7C7cfefcb0aafb46ab64f408dcef0880a8%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638648067005298266%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=LbVihb4n4fcoF2pVvB9VubOMAXdTKdezM2oA1KgyRJE%3D&reserved=0"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-blue-500 hover:underline ml-2"
+						>
+							Facebook: Polar Water
+						</a>
           </div>
         </div>
 
